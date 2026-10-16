@@ -1,0 +1,16 @@
+{"time_ns": 1792163452980593458, "state": "intent", "request": ["15ea6fd2-e43f-4e8b-a710-04f24b3590d2", 611808873, 611808874, 250]}
+{"time_ns": 1792163452992231963, "state": "acknowledged", "request": ["15ea6fd2-e43f-4e8b-a710-04f24b3590d2", 611808873, 611808874, 250], "outcome": "new"}
+{"time_ns": 1792163453002220322, "state": "intent", "request": ["15ea6fd2-e43f-4e8b-a710-04f24b3590d2", 611808873, 611808874, 250]}
+{"time_ns": 1792163453013956786, "state": "acknowledged", "request": ["15ea6fd2-e43f-4e8b-a710-04f24b3590d2", 611808873, 611808874, 250], "outcome": "existing"}
+{"time_ns": 1792163453023871995, "state": "intent", "request": ["15ea6fd2-e43f-4e8b-a710-04f24b3590d2", 611808873, 611808874, 251]}
+{"time_ns": 1792163453033427247, "state": "rejected", "request": ["15ea6fd2-e43f-4e8b-a710-04f24b3590d2", 611808873, 611808874, 251], "reason": "payload_mismatch"}
+{"time_ns": 1792163453043967618, "state": "intent", "request": ["a3bf154a-4fbd-433f-837e-3886677c791a", 611808873, 611808874, 10001]}
+{"time_ns": 1792163453053717364, "state": "rejected", "request": ["a3bf154a-4fbd-433f-837e-3886677c791a", 611808873, 611808874, 10001], "reason": "insufficient_funds"}
+{"time_ns": 1792163453066538731, "state": "intent", "request": ["10b17936-36f8-4f17-b514-df1404eaa4f0", 611808873, 611808874, 125]}
+{"time_ns": 1792163453078517624, "state": "intent", "request": ["10b17936-36f8-4f17-b514-df1404eaa4f0", 611808873, 611808874, 125]}
+{"time_ns": 1792163453106976091, "state": "acknowledged", "request": ["10b17936-36f8-4f17-b514-df1404eaa4f0", 611808873, 611808874, 125], "outcome": "new"}
+{"time_ns": 1792163453118004440, "state": "acknowledged", "request": ["10b17936-36f8-4f17-b514-df1404eaa4f0", 611808873, 611808874, 125], "outcome": "existing"}
+{"time_ns": 1792163453128109209, "state": "intent", "request": ["25fa638e-d967-4ba9-a114-7857bc2e66bf", 611808873, 611808874, 50]}
+{"time_ns": 1792163453140594561, "state": "intent", "request": ["696112b4-c95e-4194-957b-9e37d9c8a360", 611808874, 611808873, 50]}
+{"time_ns": 1792163453169457587, "state": "acknowledged", "request": ["25fa638e-d967-4ba9-a114-7857bc2e66bf", 611808873, 611808874, 50], "outcome": "new"}
+{"time_ns": 1792163453178420326, "state": "acknowledged", "request": ["696112b4-c95e-4194-957b-9e37d9c8a360", 611808874, 611808873, 50], "outcome": "new"}

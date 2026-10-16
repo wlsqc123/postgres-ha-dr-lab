@@ -1,0 +1,76 @@
+{
+  "success": true,
+  "run_id": "20261016T151052Z-73114db4",
+  "scope_accounts": [
+    611808873,
+    611808874
+  ],
+  "initial": {
+    "611808873": 10000,
+    "611808874": 10000
+  },
+  "expected_requests": [
+    [
+      "15ea6fd2-e43f-4e8b-a710-04f24b3590d2",
+      611808873,
+      611808874,
+      250
+    ],
+    [
+      "10b17936-36f8-4f17-b514-df1404eaa4f0",
+      611808873,
+      611808874,
+      125
+    ],
+    [
+      "25fa638e-d967-4ba9-a114-7857bc2e66bf",
+      611808873,
+      611808874,
+      50
+    ],
+    [
+      "696112b4-c95e-4194-957b-9e37d9c8a360",
+      611808874,
+      611808873,
+      50
+    ]
+  ],
+  "retry": "existing",
+  "payload_mismatch_rejected": true,
+  "rollback": {
+    "valid": true,
+    "requests": 1,
+    "ledger_entries": 2,
+    "balances": {
+      "611808873": 9750,
+      "611808874": 10250
+    }
+  },
+  "concurrent_outcomes": [
+    "new",
+    "existing"
+  ],
+  "opposite_direction_outcomes": [
+    "new",
+    "new"
+  ],
+  "primary": {
+    "valid": true,
+    "requests": 4,
+    "ledger_entries": 8,
+    "balances": {
+      "611808873": 9625,
+      "611808874": 10375
+    }
+  },
+  "standby": {
+    "valid": true,
+    "requests": 4,
+    "ledger_entries": 8,
+    "balances": {
+      "611808873": 9625,
+      "611808874": 10375
+    }
+  },
+  "client_records": "results/ledger-20261016T151052Z-73114db4/client.jsonl"
+}

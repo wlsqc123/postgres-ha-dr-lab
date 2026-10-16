@@ -1,0 +1,32 @@
+{
+  "accounts": [
+    {
+      "id": 611808873,
+      "balance": 9750
+    },
+    {
+      "id": 611808874,
+      "balance": 10250
+    }
+  ],
+  "request_history": [
+    {
+      "request_id": "15ea6fd2-e43f-4e8b-a710-04f24b3590d2",
+      "source": 611808873,
+      "destination": 611808874,
+      "amount": 250
+    }
+  ],
+  "ledger_entries": [
+    {
+      "request_id": "15ea6fd2-e43f-4e8b-a710-04f24b3590d2",
+      "account_id": 611808873,
+      "delta": -250
+    },
+    {
+      "request_id": "15ea6fd2-e43f-4e8b-a710-04f24b3590d2",
+      "account_id": 611808874,
+      "delta": 250
+    }
+  ]
+}

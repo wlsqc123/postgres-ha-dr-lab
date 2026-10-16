@@ -8,6 +8,8 @@ Primary와 Standby의 복제부터 시작해 장애 전환, 재시도 정합성,
 
 Primary 한 대와 읽기 전용 Standby 한 대를 물리 스트리밍 복제로 연결했습니다. Primary에서 커밋한 데이터를 Standby에서 확인하고, Standby의 쓰기 거부도 검증했습니다. 현재는 비동기 복제이며 장애 전환과 승격은 다음 단계에서 다룹니다.
 
+장애 전후 데이터를 비교할 기준으로 계좌·원장과 요청 ID 기반 이체도 추가했습니다. 같은 요청을 재전송해도 한 번만 반영되는지, 실패한 거래가 부분 반영되지 않는지 검증합니다.
+
 | 구성 요소 | 버전 |
 |---|---|
 | PostgreSQL | 18.0-bookworm |
@@ -105,6 +107,37 @@ Standby는 별도 `standby_stage2` 볼륨을 사용합니다. 최초 시작 시 
 
 slot은 Standby가 받지 못한 WAL을 Primary에 남기므로 오래 중단되면 디스크가 차오를 수 있습니다. 실습 설정은 `max_slot_wal_keep_size=256MB`로 제한했습니다. 이 값은 전체 WAL 디스크 사용량의 엄격한 상한이 아닙니다. `wal_status`, `safe_wal_size`를 관측하고, 필요한 WAL이 제거돼 slot이 `lost`가 되면 새 Base Backup으로 구성해야 합니다. 비동기 복제에서 한 번 데이터가 일치했다고 장애 시 무손실을 보장하지는 않습니다. [PostgreSQL 18 Streaming Replication과 Slots](https://www.postgresql.org/docs/18/warm-standby.html)
 
+## 계좌·원장과 재시도 검증
+
+복제가 구성된 상태에서 실행합니다. `.env`의 `APP_PASSWORD`는 비즈니스 요청 전용 계정 `ledger_app`의 암호이며 기본값은 실습용 공개 값 `local-app`입니다. 기존 계정의 암호를 설정 스크립트가 임의로 바꾸지는 않습니다.
+
+```powershell
+docker compose up -d runner
+docker compose exec -T runner python -m ledger.setup
+docker compose exec -T runner python -m ledger.check
+docker compose exec -T runner python -m pytest -q checks/test_ledger.py
+```
+
+`accounts`는 계좌 잔액, `request_history`는 요청 ID와 이체 내용, `ledger_entries`는 계좌별 증감 기록입니다. 하나의 이체에서 요청 이력, 출금·입금 잔액, 두 원장을 하나의 트랜잭션으로 커밋합니다. `ledger.model.transfer`는 직접 COMMIT을 완료한 뒤 결과를 반환하며, 다른 트랜잭션 안에서 호출해 아직 커밋하지 않은 결과를 성공으로 반환하지 않습니다.
+
+| 검증 | 기대 동작 |
+|---|---|
+| 최초 이체 | `new`, 이력 한 건과 원장 두 건 반영 |
+| 같은 ID·같은 내용 재시도 | `existing`, 추가 잔액 변동 없음 |
+| 같은 ID·다른 금액 | `PayloadMismatch`로 거부 |
+| 잔액 부족 | CHECK 오류로 거래 전체 롤백, 실패 요청 이력도 없음 |
+| 두 연결의 같은 ID 동시 전송 | `new` 한 번, `existing` 한 번 |
+| 서로 반대 방향의 동시 이체 | 두 거래 모두 커밋하고 각 원장·잔액 검증 |
+| Standby | 같은 요청·원장·잔액으로 복제 완료 |
+
+요청 ID의 유일성 제약과 저장된 payload 비교로 중복 효과를 막습니다. 이체는 READ COMMITTED에서 수행하고, 계좌 ID 순서대로 `FOR NO KEY UPDATE` 잠금을 얻습니다. 잔액 변경에는 키 변경 잠금이 필요하지 않으며, 이 잠금은 외래키 검사에 쓰이는 KEY SHARE와 충돌하지 않습니다. 이 선택과 반대 방향 이체 검증으로 계좌 잠금 시 불필요한 충돌을 줄였습니다. [PostgreSQL 18 행 잠금](https://www.postgresql.org/docs/18/explicit-locking.html#LOCKING-ROWS)
+
+검증마다 고유한 계좌 두 개를 만들고 각 10,000에서 시작합니다. 기존 계좌와 거래는 지우거나 초기화하지 않습니다. 성공할 요청 네 건의 payload와 초기 잔액을 DB 작업 전에 `inputs.json`으로 기록합니다. Python 검증기는 그 입력만으로 기대 잔액과 원장을 계산하고, 해당 계좌 범위의 DB 전체 행과 비교합니다. DB에서 조회한 합계를 기대값으로 다시 사용하지 않습니다. 최종 기대값은 요청 4건, 원장 8건, 잔액 9,625와 10,375입니다. 조회는 REPEATABLE READ의 동일 snapshot에서 수행합니다.
+
+클라이언트 기록 `client.jsonl`에는 요청 전 `intent`, COMMIT 응답 후 `acknowledged`, 확인된 거부는 `rejected`로 남깁니다. 각 기록은 flush/fsync합니다. 이는 DB 효과의 멱등성 검증이며 Exactly-Once Delivery를 주장하지 않습니다. 연결 장애 중 COMMIT 결과 불명확 분류와 실제 장애 전환은 아직 실험하지 않았습니다.
+
+실행 원본은 `results/ledger-<UTC 실행ID>/`에 보존하고, 실패하면 traceback과 0이 아닌 종료 코드를 남깁니다. 반복 실행은 새 계좌 범위를 사용합니다. [실제 결과](experiments/stage3-ledger.json), [입력](experiments/stage3-ledger/inputs.json), [클라이언트 기록](experiments/stage3-ledger/client.jsonl), [Primary](experiments/stage3-ledger/primary.json), [Standby](experiments/stage3-ledger/standby.json), [단위 테스트](experiments/stage3-ledger/pytest.log)를 공개합니다.
+
 환경을 정지하거나 다시 시작할 때는 다음 명령을 사용합니다.
 
 ```powershell
@@ -114,8 +147,8 @@ docker compose up -d --wait primary runner standby
 
 ## 다음 단계
 
-1. 장애 실험에 사용할 요청 ID 기반 계좌·원장 데이터와 재시도 검증을 준비합니다.
-2. Primary 강제 종료, 차단 확인, 안전한 승격과 클라이언트 재연결을 구현합니다.
+1. 지속적인 쓰기 부하 중 Primary를 강제 종료하고, 차단 확인 후 Standby 승격과 클라이언트 재연결을 검증합니다.
+2. 승격 직후 승인 요청의 생존 여부와 재시도 후 최종 정합성을 구분해 측정합니다.
 3. 동기·비동기 복제를 비교하고 기존 Primary를 재편입합니다.
 4. Base Backup과 WAL로 PITR을 수행하고 실측 결과를 정리합니다.
 

@@ -50,6 +50,7 @@ services:
       PGUSER: postgres
       PGPASSWORD: ${POSTGRES_PASSWORD:-local-admin}
       REPLICATION_PASSWORD: ${REPLICATION_PASSWORD:-local-repl}
+      APP_PASSWORD: ${APP_PASSWORD:-local-app}
     volumes: [".:/work"]
     working_dir: /work
     networks: [lab]
