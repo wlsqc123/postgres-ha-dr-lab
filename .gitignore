@@ -1,0 +1,7 @@
+results/
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+_workspace/

@@ -1,0 +1,14 @@
+name: postgres-ha-dr-lab
+services:
+  runner:
+    build:
+      context: .
+      dockerfile: Dockerfile.runner
+    command: [sleep, infinity]
+    restart: "no"
+    volumes: [".:/work"]
+    working_dir: /work
+    networks: [lab]
+networks:
+  lab:
+    internal: true
