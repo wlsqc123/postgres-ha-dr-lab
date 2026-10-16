@@ -6,7 +6,7 @@ Primary와 Standby의 복제부터 시작해 장애 전환, 재시도 정합성,
 
 ## 현재 단계
 
-Python 실행용 `runner`와 PostgreSQL Primary 한 대를 구성했습니다. runner에서 SQL로 접속하고, 트랜잭션을 커밋한 뒤 다른 연결에서 조회하는 것까지 확인합니다. Standby와 복제는 다음 단계에서 추가합니다.
+Primary 한 대와 읽기 전용 Standby 한 대를 물리 스트리밍 복제로 연결했습니다. Primary에서 커밋한 데이터를 Standby에서 확인하고, Standby의 쓰기 거부도 검증했습니다. 현재는 비동기 복제이며 장애 전환과 승격은 다음 단계에서 다룹니다.
 
 | 구성 요소 | 버전 |
 |---|---|
@@ -74,18 +74,49 @@ docker compose exec -T runner python scripts/check_primary.py --verify-only
 
 데이터는 `primary_stage1` 이름의 Compose 볼륨에 저장합니다. 기본 프로젝트 이름에서는 실제 볼륨 이름이 `postgres-ha-dr-lab_primary_stage1`입니다. 이전 실험 볼륨을 재사용하지 않습니다. `docker compose down -v`는 데이터 볼륨을 지우므로 데이터 보존이 필요할 때 사용하지 않습니다.
 
+## Standby 구성과 복제 검증
+
+Primary와 runner가 준비된 상태에서 복제 전용 계정과 slot을 만든 뒤 Standby를 시작합니다.
+
+```powershell
+docker compose up -d --build --wait primary runner
+docker compose exec -T runner python scripts/prepare_replication.py
+docker compose up -d --wait standby
+docker compose exec -T runner python scripts/check_replication.py
+```
+
+복제 계정은 일반 관리자와 분리한 `replicator`입니다. `.env`의 `REPLICATION_PASSWORD`를 쓰며 기본값은 로컬 실습용 `local-repl`입니다. 이미 있는 계정의 권한이나 암호를 준비 스크립트가 임의로 덮어쓰지는 않습니다. 암호를 변경할 때는 DB 계정과 연결 설정을 함께 관리해야 합니다.
+
+Standby는 별도 `standby_stage2` 볼륨을 사용합니다. 최초 시작 시 빈 디렉터리에서만 `pg_basebackup -R -X stream -S standby_stage2`를 수행합니다. `-R`이 `standby.signal`, `primary_conninfo`, slot 연결 설정을 생성합니다. 이후에는 같은 데이터를 재사용하며, 불완전한 데이터 디렉터리나 `standby.signal`이 없는 복사본은 자동 삭제하거나 Primary로 시작하지 않고 오류로 종료합니다. [PostgreSQL 18 pg_basebackup](https://www.postgresql.org/docs/18/app-pgbasebackup.html)
+
+`check_replication.py`는 매번 고유 UUID와 고정 문자열을 Primary에 커밋한 뒤, Standby의 조회 결과를 그 기대값과 비교합니다. 두 서버의 시스템 식별자가 같은지도 확인합니다. 이어서 Standby에 실제 INSERT를 시도하고 SQLSTATE `25006`으로 거부되는지 검사합니다. 컨테이너 실행 여부만으로 성공을 판정하지 않습니다.
+
+| 확인 항목 | 기대 결과 |
+|---|---|
+| Primary `pg_is_in_recovery()` | `false` |
+| Standby `pg_is_in_recovery()` / read-only | `true` / `on` |
+| Primary `pg_stat_replication` | `state=streaming`, `sync_state=async` |
+| Standby `pg_stat_wal_receiver` | `status=streaming` |
+| 복제 slot | `standby_stage2`, `active=true`, WAL 유실 상태 아님 |
+| 새 요청 데이터 | 생성한 UUID와 문자열이 Standby 조회값과 일치 |
+| Standby INSERT | 읽기 전용 트랜잭션 오류로 거부 |
+
+결과에는 WAL sent/write/flush/replay LSN과 Standby 수신·재생 LSN, slot 상태를 출력합니다. [이번 단계의 실제 결과](experiments/stage2-streaming.json)를 함께 보관합니다.
+
+slot은 Standby가 받지 못한 WAL을 Primary에 남기므로 오래 중단되면 디스크가 차오를 수 있습니다. 실습 설정은 `max_slot_wal_keep_size=256MB`로 제한했습니다. 이 값은 전체 WAL 디스크 사용량의 엄격한 상한이 아닙니다. `wal_status`, `safe_wal_size`를 관측하고, 필요한 WAL이 제거돼 slot이 `lost`가 되면 새 Base Backup으로 구성해야 합니다. 비동기 복제에서 한 번 데이터가 일치했다고 장애 시 무손실을 보장하지는 않습니다. [PostgreSQL 18 Streaming Replication과 Slots](https://www.postgresql.org/docs/18/warm-standby.html)
+
 환경을 정지하거나 다시 시작할 때는 다음 명령을 사용합니다.
 
 ```powershell
-docker compose stop primary runner
-docker compose up -d --wait primary runner
+docker compose stop standby primary runner
+docker compose up -d --wait primary runner standby
 ```
 
 ## 다음 단계
 
-1. Standby를 추가하고 실제 데이터 복제와 읽기 전용 상태를 검증합니다.
-2. Primary 강제 종료, 안전한 승격, 클라이언트 재연결을 구현합니다.
-3. 동기·비동기 복제와 멱등성, 기존 Primary 재편입을 검증합니다.
+1. 장애 실험에 사용할 요청 ID 기반 계좌·원장 데이터와 재시도 검증을 준비합니다.
+2. Primary 강제 종료, 차단 확인, 안전한 승격과 클라이언트 재연결을 구현합니다.
+3. 동기·비동기 복제를 비교하고 기존 Primary를 재편입합니다.
 4. Base Backup과 WAL로 PITR을 수행하고 실측 결과를 정리합니다.
 
 각 단계의 코드와 검증 결과를 확인한 뒤 다음 단계로 진행합니다.

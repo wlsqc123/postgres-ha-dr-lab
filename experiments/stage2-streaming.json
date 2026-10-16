@@ -1,0 +1,57 @@
+{
+  "observed_at": "2026-10-16T14:42:31.798396+00:00",
+  "primary_settings": {
+    "version": "PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+    "wal_level": "replica",
+    "synchronous_standby_names": "",
+    "max_slot_wal_keep_size": "256MB"
+  },
+  "system_id": {
+    "system_identifier": 7697257088245846055
+  },
+  "expected": {
+    "request_id": "4cad42e0-ce6d-49b3-b9b3-277b8a71356b",
+    "value": "streaming-replication-ready"
+  },
+  "actual": {
+    "request_id": "4cad42e0-ce6d-49b3-b9b3-277b8a71356b",
+    "value": "streaming-replication-ready"
+  },
+  "standby": {
+    "recovery": true,
+    "read_only": "on",
+    "receive_lsn": "0/302BAD0",
+    "replay_lsn": "0/302BAD0"
+  },
+  "receiver": [
+    {
+      "status": "streaming",
+      "sender_host": "primary",
+      "written_lsn": "0/302BAD0",
+      "flushed_lsn": "0/302BAD0"
+    }
+  ],
+  "senders": [
+    {
+      "application_name": "standby_stage2",
+      "state": "streaming",
+      "sync_state": "async",
+      "sent_lsn": "0/302BAD0",
+      "write_lsn": "0/302BAD0",
+      "flush_lsn": "0/302BAD0",
+      "replay_lsn": "0/302BAD0"
+    }
+  ],
+  "slot": {
+    "slot_name": "standby_stage2",
+    "active": true,
+    "restart_lsn": "0/302BAD0",
+    "wal_status": "reserved",
+    "safe_wal_size": 285033776
+  },
+  "rejected_write": {
+    "sqlstate": "25006",
+    "message": "cannot execute INSERT in a read-only transaction"
+  },
+  "success": true
+}

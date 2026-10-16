@@ -10,6 +10,27 @@ services:
       PGDATA: /data/pgdata
     volumes:
       - primary_stage1:/data
+      - ./config/replication_hba.conf:/etc/lab/replication_hba.conf:ro
+    command: [postgres, -c, hba_file=/etc/lab/replication_hba.conf, -c, wal_level=replica, -c, max_wal_senders=10, -c, max_replication_slots=4, -c, max_slot_wal_keep_size=256MB]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U postgres -d lab"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+      start_period: 5s
+    networks: [lab]
+  standby:
+    image: postgres:18.0-bookworm
+    restart: "no"
+    environment:
+      PGDATA: /data/pgdata
+      REPLICATION_PASSWORD: ${REPLICATION_PASSWORD:-local-repl}
+    entrypoint: [bash, /etc/lab/standby_entrypoint.sh]
+    command: [postgres, -c, hba_file=/etc/lab/replication_hba.conf, -c, hot_standby=on, -c, max_slot_wal_keep_size=256MB]
+    volumes:
+      - standby_stage2:/data
+      - ./config/replication_hba.conf:/etc/lab/replication_hba.conf:ro
+      - ./scripts/standby_entrypoint.sh:/etc/lab/standby_entrypoint.sh:ro
     healthcheck:
       test: [CMD-SHELL, "pg_isready -U postgres -d lab"]
       interval: 2s
@@ -28,11 +49,13 @@ services:
       PGDATABASE: lab
       PGUSER: postgres
       PGPASSWORD: ${POSTGRES_PASSWORD:-local-admin}
+      REPLICATION_PASSWORD: ${REPLICATION_PASSWORD:-local-repl}
     volumes: [".:/work"]
     working_dir: /work
     networks: [lab]
 volumes:
   primary_stage1:
+  standby_stage2:
 networks:
   lab:
     internal: true
