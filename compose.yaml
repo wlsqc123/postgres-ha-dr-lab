@@ -1,14 +1,38 @@
 name: postgres-ha-dr-lab
 services:
+  primary:
+    image: postgres:18.0-bookworm
+    restart: "no"
+    environment:
+      POSTGRES_DB: lab
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-admin}
+      POSTGRES_INITDB_ARGS: --data-checksums
+      PGDATA: /data/pgdata
+    volumes:
+      - primary_stage1:/data
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U postgres -d lab"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+      start_period: 5s
+    networks: [lab]
   runner:
     build:
       context: .
       dockerfile: Dockerfile.runner
     command: [sleep, infinity]
     restart: "no"
+    environment:
+      PGHOST: primary
+      PGDATABASE: lab
+      PGUSER: postgres
+      PGPASSWORD: ${POSTGRES_PASSWORD:-local-admin}
     volumes: [".:/work"]
     working_dir: /work
     networks: [lab]
+volumes:
+  primary_stage1:
 networks:
   lab:
     internal: true
