@@ -11,6 +11,8 @@ services:
     volumes:
       - primary_stage1:/data
       - ./config/replication_hba.conf:/etc/lab/replication_hba.conf:ro
+      - ./scripts/primary_entrypoint.sh:/etc/lab/primary_entrypoint.sh:ro
+    entrypoint: [bash, /etc/lab/primary_entrypoint.sh]
     command: [postgres, -c, hba_file=/etc/lab/replication_hba.conf, -c, wal_level=replica, -c, max_wal_senders=10, -c, max_replication_slots=4, -c, max_slot_wal_keep_size=256MB]
     healthcheck:
       test: [CMD-SHELL, "pg_isready -U postgres -d lab"]

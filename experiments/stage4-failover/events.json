@@ -1,0 +1,38 @@
+{
+  "workload_started": {
+    "time_ns": 1792232553045614100,
+    "elapsed_seconds": 5.046999999904074
+  },
+  "fault_requested": {
+    "time_ns": 1792232561487640600,
+    "elapsed_seconds": 13.5
+  },
+  "kill_completed": {
+    "time_ns": 1792232562301709900,
+    "elapsed_seconds": 14.311999999918044
+  },
+  "failure_observed": {
+    "time_ns": 1792232562306973600,
+    "elapsed_seconds": 14.311999999918044
+  },
+  "fenced": {
+    "time_ns": 1792232564424978900,
+    "elapsed_seconds": 16.436999999918044
+  },
+  "promotion_started": {
+    "time_ns": 1792232564594186300,
+    "elapsed_seconds": 16.608999999938533
+  },
+  "promotion_completed": {
+    "time_ns": 1792232566375039800,
+    "elapsed_seconds": 18.390999999945052
+  },
+  "route_changed": {
+    "time_ns": 1792232570086726400,
+    "elapsed_seconds": 22.093999999924563
+  },
+  "first_application_success_observed": {
+    "time_ns": 1792232575320564300,
+    "elapsed_seconds": 27.32799999997951
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "primary": {
+    "recovery": false,
+    "version": "PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+    "synchronous_standby_names": "",
+    "synchronous_commit": "on",
+    "control": {
+      "checkpoint_lsn": "0/306DE48",
+      "redo_lsn": "0/306DE48",
+      "redo_wal_file": "000000010000000000000003",
+      "timeline_id": 1,
+      "prev_timeline_id": 1,
+      "full_page_writes": true,
+      "next_xid": "0:788",
+      "next_oid": 24590,
+      "next_multixact_id": "7",
+      "next_multi_offset": "17",
+      "oldest_xid": "745",
+      "oldest_xid_dbid": 1,
+      "oldest_active_xid": "0",
+      "oldest_multi_xid": "1",
+      "oldest_multi_dbid": 1,
+      "oldest_commit_ts_xid": "0",
+      "newest_commit_ts_xid": "0",
+      "checkpoint_time": "2026-10-17 10:22:14+00:00"
+    },
+    "system": {
+      "system_identifier": 7697257088245846055
+    },
+    "senders": [
+      {
+        "pid": 36,
+        "usesysid": 16398,
+        "usename": "replicator",
+        "application_name": "standby_stage2",
+        "client_addr": "192.168.80.4",
+        "client_hostname": null,
+        "client_port": 51844,
+        "backend_start": "2026-10-17 10:22:14.084759+00:00",
+        "backend_xmin": null,
+        "state": "streaming",
+        "sent_lsn": "0/3091DB0",
+        "write_lsn": "0/3091DB0",
+        "flush_lsn": "0/3091DB0",
+        "replay_lsn": "0/3091DB0",
+        "write_lag": "0:00:00.000182",
+        "flush_lag": "0:00:00.002255",
+        "replay_lag": "0:00:00.002323",
+        "sync_priority": 0,
+        "sync_state": "async",
+        "reply_time": "2026-10-17 10:22:40.430587+00:00"
+      }
+    ],
+    "receiver": [],
+    "slots": [
+      {
+        "slot_name": "standby_stage2",
+        "plugin": null,
+        "slot_type": "physical",
+        "datoid": null,
+        "database": null,
+        "temporary": false,
+        "active": true,
+        "active_pid": 36,
+        "xmin": null,
+        "catalog_xmin": null,
+        "restart_lsn": "0/3091DB0",
+        "confirmed_flush_lsn": null,
+        "wal_status": "reserved",
+        "safe_wal_size": 284615248,
+        "two_phase": false,
+        "two_phase_at": null,
+        "inactive_since": null,
+        "conflicting": null,
+        "invalidation_reason": null,
+        "failover": false,
+        "synced": false
+      }
+    ],
+    "lsn": {
+      "current": "0/3091DB0"
+    }
+  },
+  "standby": {
+    "recovery": true,
+    "version": "PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+    "synchronous_standby_names": "",
+    "synchronous_commit": "on",
+    "control": {
+      "checkpoint_lsn": "0/306DD98",
+      "redo_lsn": "0/306DD08",
+      "redo_wal_file": "000000010000000000000003",
+      "timeline_id": 1,
+      "prev_timeline_id": 1,
+      "full_page_writes": true,
+      "next_xid": "0:788",
+      "next_oid": 24590,
+      "next_multixact_id": "7",
+      "next_multi_offset": "17",
+      "oldest_xid": "745",
+      "oldest_xid_dbid": 1,
+      "oldest_active_xid": "788",
+      "oldest_multi_xid": "1",
+      "oldest_multi_dbid": 1,
+      "oldest_commit_ts_xid": "0",
+      "newest_commit_ts_xid": "0",
+      "checkpoint_time": "2026-10-16 15:11:38+00:00"
+    },
+    "system": {
+      "system_identifier": 7697257088245846055
+    },
+    "senders": [],
+    "receiver": [
+      {
+        "status": "streaming",
+        "sender_host": "primary",
+        "written_lsn": "0/3098918",
+        "flushed_lsn": "0/3098918",
+        "latest_end_lsn": "0/3098918"
+      }
+    ],
+    "slots": [],
+    "lsn": {
+      "receive": "0/3098918",
+      "replay": "0/3098918"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "acknowledged": 159,
+  "surviving_acknowledged": 159,
+  "lost_acknowledged": [],
+  "uncertain": [
+    "9b09d984-480f-5b33-9f55-3b3f8e9c3edf"
+  ],
+  "uncertain_surviving": [],
+  "actual_requests": 159,
+  "validation": {
+    "valid": true,
+    "requests": 159,
+    "ledger_entries": 318,
+    "balances": {
+      "399586296": 999841,
+      "399586297": 1000159
+    }
+  }
+}

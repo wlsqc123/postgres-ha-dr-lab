@@ -6,7 +6,7 @@ Primary와 Standby의 복제부터 시작해 장애 전환, 재시도 정합성,
 
 ## 현재 단계
 
-Primary 한 대와 읽기 전용 Standby 한 대를 물리 스트리밍 복제로 연결했습니다. Primary에서 커밋한 데이터를 Standby에서 확인하고, Standby의 쓰기 거부도 검증했습니다. 현재는 비동기 복제이며 장애 전환과 승격은 다음 단계에서 다룹니다.
+비동기 물리 스트리밍 복제를 구성하고, 쓰기 부하 중 Primary 강제 종료와 Standby 승격을 검증했습니다. 현재 실험 환경의 `primary`는 차단된 정지 상태이며, 서비스 이름이 `standby`인 서버가 새 Primary입니다. 기존 Primary 재편입은 다음 단계입니다.
 
 장애 전후 데이터를 비교할 기준으로 계좌·원장과 요청 ID 기반 이체도 추가했습니다. 같은 요청을 재전송해도 한 번만 반영되는지, 실패한 거래가 부분 반영되지 않는지 검증합니다.
 
@@ -17,7 +17,7 @@ Primary 한 대와 읽기 전용 Standby 한 대를 물리 스트리밍 복제�
 | psycopg | 3.2.9 |
 | pytest | 8.4.1 |
 
-Python 패키지는 컨테이너 안에 설치합니다. 호스트에 Python이나 별도 패키지를 설치할 필요가 없습니다.
+Python 패키지는 컨테이너 안에 설치합니다. 기본 복제·원장 검증은 호스트 Python 없이 실행합니다. 장애 전환 제어에는 호스트 Python 3.11 이상이 필요하며 추가 패키지는 쓰지 않습니다.
 
 ## 실행 환경 준비
 
@@ -134,22 +134,39 @@ docker compose exec -T runner python -m pytest -q checks/test_ledger.py
 
 검증마다 고유한 계좌 두 개를 만들고 각 10,000에서 시작합니다. 기존 계좌와 거래는 지우거나 초기화하지 않습니다. 성공할 요청 네 건의 payload와 초기 잔액을 DB 작업 전에 `inputs.json`으로 기록합니다. Python 검증기는 그 입력만으로 기대 잔액과 원장을 계산하고, 해당 계좌 범위의 DB 전체 행과 비교합니다. DB에서 조회한 합계를 기대값으로 다시 사용하지 않습니다. 최종 기대값은 요청 4건, 원장 8건, 잔액 9,625와 10,375입니다. 조회는 REPEATABLE READ의 동일 snapshot에서 수행합니다.
 
-클라이언트 기록 `client.jsonl`에는 요청 전 `intent`, COMMIT 응답 후 `acknowledged`, 확인된 거부는 `rejected`로 남깁니다. 각 기록은 flush/fsync합니다. 이는 DB 효과의 멱등성 검증이며 Exactly-Once Delivery를 주장하지 않습니다. 연결 장애 중 COMMIT 결과 불명확 분류와 실제 장애 전환은 아직 실험하지 않았습니다.
+클라이언트 기록 `client.jsonl`에는 요청 전 `intent`, COMMIT 응답 후 `acknowledged`, 확인된 거부는 `rejected`로 남깁니다. 각 기록은 flush/fsync합니다. 이는 DB 효과의 멱등성 검증이며 Exactly-Once Delivery를 주장하지 않습니다. 장애 전환 실험에서는 연결 실패와 거래 결과 불명확 상태도 구분합니다.
 
 실행 원본은 `results/ledger-<UTC 실행ID>/`에 보존하고, 실패하면 traceback과 0이 아닌 종료 코드를 남깁니다. 반복 실행은 새 계좌 범위를 사용합니다. [실제 결과](experiments/stage3-ledger.json), [입력](experiments/stage3-ledger/inputs.json), [클라이언트 기록](experiments/stage3-ledger/client.jsonl), [Primary](experiments/stage3-ledger/primary.json), [Standby](experiments/stage3-ledger/standby.json), [단위 테스트](experiments/stage3-ledger/pytest.log)를 공개합니다.
 
-환경을 정지하거나 다시 시작할 때는 다음 명령을 사용합니다.
+아래 시작·정지 명령과 앞선 Primary·복제 검증 명령은 장애 전환 이전의 구성에서 사용합니다. 승격 이후에는 기존 Primary를 시작하지 않습니다.
 
 ```powershell
 docker compose stop standby primary runner
 docker compose up -d --wait primary runner standby
 ```
 
+## Primary 장애 전환
+
+원장 초기화까지 마친 정상 Primary/Standby 쌍에서 한 번 실행합니다. 기존 실험 환경은 이미 승격했으므로 재편입 전에는 다시 실행하지 않습니다.
+
+```powershell
+docker compose up -d --wait primary runner standby
+docker compose exec -T runner python -m pytest -q checks/test_ledger.py checks/test_failover.py
+python -m ledger.failover --confirm-primary-kill
+```
+
+호스트 제어기가 기존 Primary의 SIGKILL 종료와 `restart=no`를 확인하고 데이터 디렉터리에 `lab.fenced` 표식을 남긴 뒤 승격합니다. Primary 시작 스크립트는 이 표식이 있으면 PostgreSQL을 실행하지 않습니다. 단일 PC의 수동 실험용 차단이며 운영 환경의 STONITH나 분산 합의를 대신하지 않습니다.
+
+승격 직후 재시도와 새 쓰기에 앞서 승인 요청의 생존 여부를 저장합니다. 이후 쓰기 확인, 앱 연결 전환, 같은 요청 ID 재시도, 독립적인 기대값 비교를 수행합니다. [실험 설명](docs/stage4-failover.md), [실측 결과](experiments/stage4-failover.json), [실행 기록](experiments/stage4-failover/)을 공개합니다.
+
+이번 실행은 승인 159건 중 유실 0건, 관측 복구 시간 13.828초, 최종 요청 205건과 원장 410건의 정합성 검증을 통과했습니다. 한 번의 비동기 실험에서 유실이 없었다고 무손실을 보장하지 않습니다.
+
+현재 DB 확인은 `docker compose exec standby psql -U postgres -d lab`으로 합니다. 구 Primary는 재편입 절차 전까지 시작하지 않으며 차단 표식도 제거하지 않습니다.
+
 ## 다음 단계
 
-1. 지속적인 쓰기 부하 중 Primary를 강제 종료하고, 차단 확인 후 Standby 승격과 클라이언트 재연결을 검증합니다.
-2. 승격 직후 승인 요청의 생존 여부와 재시도 후 최종 정합성을 구분해 측정합니다.
-3. 동기·비동기 복제를 비교하고 기존 Primary를 재편입합니다.
-4. Base Backup과 WAL로 PITR을 수행하고 실측 결과를 정리합니다.
+1. 기존 Primary를 새 Primary의 Standby로 재편입합니다.
+2. 동기·비동기 복제의 승인 지연과 장애 시 유실을 비교합니다.
+3. Base Backup과 WAL로 PITR을 수행하고 실측 결과를 정리합니다.
 
 각 단계의 코드와 검증 결과를 확인한 뒤 다음 단계로 진행합니다.

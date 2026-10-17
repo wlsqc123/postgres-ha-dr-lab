@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "run_id": "20261017T102227Z-399b090b",
+  "mode": "async",
+  "requested_rate": 20,
+  "fault_detection_seconds": 0.8119999999180436,
+  "promotion_seconds": 1.7820000000065193,
+  "routing_seconds": 3.702999999979511,
+  "application_reconnect_seconds": 5.234000000054948,
+  "recovery_observed_seconds": 13.827999999979511,
+  "acknowledged_before_retry": 159,
+  "lost_acknowledged": 0,
+  "uncertain_before_retry": 1,
+  "workload_attempts": 204,
+  "pre_fault_latency_ms": {
+    "p50": 18.194611000012628,
+    "p95": 24.119240000004538,
+    "p99": 31.859222000008458
+  },
+  "retry_new": 3,
+  "retry_existing": 201,
+  "final": {
+    "valid": true,
+    "requests": 205,
+    "ledger_entries": 410,
+    "balances": {
+      "399586296": 999795,
+      "399586297": 1000205
+    }
+  },
+  "old_timeline": 1,
+  "new_timeline": 2
+}

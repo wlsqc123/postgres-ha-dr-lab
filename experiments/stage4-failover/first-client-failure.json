@@ -1,0 +1,14 @@
+{
+  "time_ns": 1792232562127202067,
+  "event": "result",
+  "request": [
+    "fe718da3-2916-5295-aa0f-12db8987dec5",
+    399586296,
+    399586297,
+    1
+  ],
+  "host": "primary",
+  "latency_ms": 7.150433000020939,
+  "state": "failed",
+  "error": "connection failed: connection to server at \"192.168.80.2\", port 5432 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?"
+}

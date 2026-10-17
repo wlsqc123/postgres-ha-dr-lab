@@ -1,0 +1,192 @@
+{
+  "primary": {
+    "recovery": false,
+    "version": "PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+    "synchronous_standby_names": "",
+    "synchronous_commit": "on",
+    "control": {
+      "checkpoint_lsn": "0/306DE48",
+      "redo_lsn": "0/306DE48",
+      "redo_wal_file": "000000010000000000000003",
+      "timeline_id": 1,
+      "prev_timeline_id": 1,
+      "full_page_writes": true,
+      "next_xid": "0:788",
+      "next_oid": 24590,
+      "next_multixact_id": "7",
+      "next_multi_offset": "17",
+      "oldest_xid": "745",
+      "oldest_xid_dbid": 1,
+      "oldest_active_xid": "0",
+      "oldest_multi_xid": "1",
+      "oldest_multi_dbid": 1,
+      "oldest_commit_ts_xid": "0",
+      "newest_commit_ts_xid": "0",
+      "checkpoint_time": "2026-10-17 10:22:14+00:00"
+    },
+    "system": {
+      "system_identifier": 7697257088245846055
+    },
+    "senders": [
+      {
+        "pid": 36,
+        "usesysid": 16398,
+        "usename": "replicator",
+        "application_name": "standby_stage2",
+        "client_addr": "192.168.80.4",
+        "client_hostname": null,
+        "client_port": 51844,
+        "backend_start": "2026-10-17 10:22:14.084759+00:00",
+        "backend_xmin": null,
+        "state": "streaming",
+        "sent_lsn": "0/30701C0",
+        "write_lsn": "0/30701C0",
+        "flush_lsn": "0/30701C0",
+        "replay_lsn": "0/30701C0",
+        "write_lag": "0:00:00.000202",
+        "flush_lag": "0:00:00.002349",
+        "replay_lag": "0:00:00.002391",
+        "sync_priority": 0,
+        "sync_state": "async",
+        "reply_time": "2026-10-17 10:22:27.736670+00:00"
+      }
+    ],
+    "receiver": [],
+    "slots": [
+      {
+        "slot_name": "standby_stage2",
+        "plugin": null,
+        "slot_type": "physical",
+        "datoid": null,
+        "database": null,
+        "temporary": false,
+        "active": true,
+        "active_pid": 36,
+        "xmin": null,
+        "catalog_xmin": null,
+        "restart_lsn": "0/30701C0",
+        "confirmed_flush_lsn": null,
+        "wal_status": "reserved",
+        "safe_wal_size": 284753472,
+        "two_phase": false,
+        "two_phase_at": null,
+        "inactive_since": null,
+        "conflicting": null,
+        "invalidation_reason": null,
+        "failover": false,
+        "synced": false
+      }
+    ],
+    "lsn": {
+      "current": "0/30701C0"
+    }
+  },
+  "standby": {
+    "recovery": true,
+    "version": "PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+    "synchronous_standby_names": "",
+    "synchronous_commit": "on",
+    "control": {
+      "checkpoint_lsn": "0/306DD98",
+      "redo_lsn": "0/306DD08",
+      "redo_wal_file": "000000010000000000000003",
+      "timeline_id": 1,
+      "prev_timeline_id": 1,
+      "full_page_writes": true,
+      "next_xid": "0:788",
+      "next_oid": 24590,
+      "next_multixact_id": "7",
+      "next_multi_offset": "17",
+      "oldest_xid": "745",
+      "oldest_xid_dbid": 1,
+      "oldest_active_xid": "788",
+      "oldest_multi_xid": "1",
+      "oldest_multi_dbid": 1,
+      "oldest_commit_ts_xid": "0",
+      "newest_commit_ts_xid": "0",
+      "checkpoint_time": "2026-10-16 15:11:38+00:00"
+    },
+    "system": {
+      "system_identifier": 7697257088245846055
+    },
+    "senders": [],
+    "receiver": [
+      {
+        "status": "streaming",
+        "sender_host": "primary",
+        "written_lsn": "0/30701C0",
+        "flushed_lsn": "0/30701C0",
+        "latest_end_lsn": "0/30701C0"
+      }
+    ],
+    "slots": [],
+    "lsn": {
+      "receive": "0/30701C0",
+      "replay": "0/30701C0"
+    }
+  },
+  "container": {
+    "Id": "2f1b2b2d2de4216a98d70f23c03856cc003cd245357adf77420ff15712682e8e",
+    "State": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "Health": {
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "End": "2026-10-17T10:22:20.953979599Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n",
+            "Start": "2026-10-17T10:22:20.836771163Z"
+          },
+          {
+            "End": "2026-10-17T10:22:23.039915191Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n",
+            "Start": "2026-10-17T10:22:22.965095581Z"
+          },
+          {
+            "End": "2026-10-17T10:22:25.111880227Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n",
+            "Start": "2026-10-17T10:22:25.051724861Z"
+          },
+          {
+            "End": "2026-10-17T10:22:27.231964862Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n",
+            "Start": "2026-10-17T10:22:27.130858293Z"
+          },
+          {
+            "End": "2026-10-17T10:22:29.374738568Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n",
+            "Start": "2026-10-17T10:22:29.292723705Z"
+          }
+        ],
+        "Status": "healthy"
+      },
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 2203,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-10-17T10:22:12.533096736Z",
+      "Status": "running"
+    },
+    "HostConfig": {
+      "RestartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "no"
+      }
+    },
+    "Project": "postgres-ha-dr-lab",
+    "Service": "primary",
+    "Entrypoint": [
+      "bash",
+      "/etc/lab/primary_entrypoint.sh"
+    ]
+  }
+}

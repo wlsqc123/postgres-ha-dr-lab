@@ -1,0 +1,5 @@
+{
+  "confirm_primary_kill": true,
+  "rate": 20,
+  "warmup_seconds": 5
+}

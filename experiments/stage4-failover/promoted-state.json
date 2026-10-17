@@ -1,0 +1,35 @@
+{
+  "recovery": false,
+  "version": "PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+  "synchronous_standby_names": "",
+  "synchronous_commit": "on",
+  "control": {
+    "checkpoint_lsn": "0/309BF70",
+    "redo_lsn": "0/309BF18",
+    "redo_wal_file": "000000020000000000000003",
+    "timeline_id": 2,
+    "prev_timeline_id": 2,
+    "full_page_writes": true,
+    "next_xid": "0:949",
+    "next_oid": 24590,
+    "next_multixact_id": "7",
+    "next_multi_offset": "17",
+    "oldest_xid": "745",
+    "oldest_xid_dbid": 1,
+    "oldest_active_xid": "949",
+    "oldest_multi_xid": "1",
+    "oldest_multi_dbid": 1,
+    "oldest_commit_ts_xid": "0",
+    "newest_commit_ts_xid": "0",
+    "checkpoint_time": "2026-10-17 10:22:47+00:00"
+  },
+  "system": {
+    "system_identifier": 7697257088245846055
+  },
+  "senders": [],
+  "receiver": [],
+  "slots": [],
+  "lsn": {
+    "current": "0/309BFE8"
+  }
+}

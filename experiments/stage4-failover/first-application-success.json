@@ -1,0 +1,14 @@
+{
+  "time_ns": 1792232575242780166,
+  "event": "result",
+  "request": [
+    "115de031-b15a-5810-9f87-7f6affd46ae1",
+    399586296,
+    399586297,
+    1
+  ],
+  "host": "standby",
+  "latency_ms": 38.36408700001925,
+  "state": "acknowledged",
+  "outcome": "new"
+}
