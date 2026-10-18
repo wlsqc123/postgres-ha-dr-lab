@@ -8,7 +8,7 @@ Primary와 Standby의 복제부터 시작해 장애 전환, 재시도 정합성,
 
 ## 현재 단계
 
-비동기 물리 스트리밍 복제, 쓰기 부하 중 장애 전환, 기존 Primary의 Standby 재편입까지 검증했습니다. 현재 서비스 이름 `standby`가 새 Primary이며 `primary`는 새 백업으로 재구성한 읽기 전용 Standby입니다. 장애 당시 디스크는 차단 표식과 함께 별도로 보존했습니다.
+비동기 물리 스트리밍 복제, 쓰기 부하 중 장애 전환, 기존 Primary 재편입과 별도 환경의 동기·비동기 비교까지 검증했습니다. 현재 서비스 이름 `standby`가 새 Primary이며 `primary`는 새 백업으로 재구성한 읽기 전용 Standby입니다. 장애 당시 디스크는 차단 표식과 함께 별도로 보존했습니다.
 
 재편입 이후에는 모든 시작·정지 작업에 `-f compose.yaml -f compose.rejoin.yaml`을 함께 지정합니다. 아래 초기 구축 명령은 장애 전환 이전 단계의 재현용입니다.
 
@@ -189,9 +189,18 @@ docker compose -f compose.yaml -f compose.rejoin.yaml up -d --wait standby runne
 
 실습 중인 현재 환경을 유지하려면 마지막 두 명령을 실행할 필요는 없습니다. 기본 compose.yaml만으로 다시 시작하면 보존된 구 디스크를 가리키며 차단 장치가 시작을 거부합니다. 차단 표식을 지우거나 기존 볼륨을 삭제하지 않습니다.
 
+## 동기·비동기 복제 비교
+
+기존 재편입 환경을 보존하고 같은 프로젝트의 별도 DB 두 쌍에서 비교했습니다. 각 300건의 이체 승인 지연 p95는 비동기 21.545ms, 동기 28.664ms였습니다. Standby를 중단하면 비동기는 승인을 계속했고 동기는 SyncRep에서 대기했습니다. 이 상태에서 Primary를 종료하고 승격했을 때 승인 유실은 비동기 10/321건, 동기 0/311건이었습니다. 복제 단절을 의도적으로 만든 조건이며 일반적인 장애 유실률을 뜻하지 않습니다.
+
+```powershell
+python -m ledger.compare --confirm-comparison-faults
+```
+
+비교용 컨테이너·볼륨이 없는 초기 상태에서 한 번 실행합니다. 끝나면 비교용 DB만 정지하고 볼륨은 보존합니다. [측정 조건](docs/stage6-replication-compare.md)과 [실측 결과](experiments/stage6-compare.json)를 확인할 수 있습니다.
+
 ## 다음 단계
 
-1. 동기·비동기 복제의 승인 지연과 장애 시 유실을 비교합니다.
-2. Base Backup과 WAL로 PITR을 수행하고 실측 결과를 정리합니다.
+1. Base Backup과 WAL로 PITR을 수행하고 실측 결과를 정리합니다.
 
 각 단계의 코드와 검증 결과를 확인한 뒤 다음 단계로 진행합니다.

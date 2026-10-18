@@ -1,0 +1,70 @@
+{
+  "action": "batch",
+  "host": "compare-sync-primary",
+  "requests": [
+    [
+      "12ad84fd-7e7c-408d-a16a-cb294d4642a9",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "163fa030-46fa-4314-9dd7-1710f661bb08",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "3bc0fb50-fd98-4e24-a633-d48f556dddda",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "677215a9-bf92-4307-9442-a2d0f0e436e6",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "ab3ebc49-0a44-4ebc-8617-81e56de49b23",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "51b926e1-0342-40d6-bb8b-3b6529277ff9",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "8d4f66c4-a975-44ae-9cd4-355f40b6a7fc",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "8129cb91-cf46-40ca-9416-5a32a16878d8",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "c75d5f9e-127b-46d3-b672-af1a5e8e584e",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "205efea1-7ee3-4554-b447-19e449bbd252",
+      1001,
+      1002,
+      1
+    ]
+  ],
+  "phase": "warmup",
+  "application_name": "compare_sync_warmup",
+  "log": "results/compare-20261018T132454Z-70feae5d/sync/client.jsonl",
+  "output": "results/compare-20261018T132454Z-70feae5d/sync/warmup-output.json"
+}

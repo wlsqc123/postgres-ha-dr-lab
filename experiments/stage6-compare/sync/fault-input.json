@@ -1,0 +1,16 @@
+{
+  "action": "batch",
+  "host": "compare-sync-primary",
+  "requests": [
+    [
+      "4bf2be9b-1ebc-4515-a49d-884fc302f41d",
+      1001,
+      1002,
+      1
+    ]
+  ],
+  "phase": "fault",
+  "application_name": "compare_sync_fault",
+  "log": "results/compare-20261018T132454Z-70feae5d/sync/client.jsonl",
+  "output": "results/compare-20261018T132454Z-70feae5d/sync/fault-output.json"
+}

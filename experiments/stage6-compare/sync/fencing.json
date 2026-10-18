@@ -1,0 +1,64 @@
+{
+  "Id": "71319a9b3f18fb052a7975fb80480de8253a2bf3f6ce15e264d8568181dd8687",
+  "State": {
+    "Dead": false,
+    "Error": "",
+    "ExitCode": 137,
+    "FinishedAt": "2026-10-18T13:29:15.492045606Z",
+    "Health": {
+      "FailingStreak": 0,
+      "Log": [
+        {
+          "End": "2026-10-18T13:29:05.360648067Z",
+          "ExitCode": 0,
+          "Output": "/var/run/postgresql:5432 - accepting connections\n",
+          "Start": "2026-10-18T13:29:05.233167508Z"
+        },
+        {
+          "End": "2026-10-18T13:29:07.550064847Z",
+          "ExitCode": 0,
+          "Output": "/var/run/postgresql:5432 - accepting connections\n",
+          "Start": "2026-10-18T13:29:07.382684979Z"
+        },
+        {
+          "End": "2026-10-18T13:29:09.695750602Z",
+          "ExitCode": 0,
+          "Output": "/var/run/postgresql:5432 - accepting connections\n",
+          "Start": "2026-10-18T13:29:09.593671291Z"
+        },
+        {
+          "End": "2026-10-18T13:29:11.844845665Z",
+          "ExitCode": 0,
+          "Output": "/var/run/postgresql:5432 - accepting connections\n",
+          "Start": "2026-10-18T13:29:11.714413545Z"
+        },
+        {
+          "End": "2026-10-18T13:29:13.958399752Z",
+          "ExitCode": 0,
+          "Output": "/var/run/postgresql:5432 - accepting connections\n",
+          "Start": "2026-10-18T13:29:13.863346712Z"
+        }
+      ],
+      "Status": "unhealthy"
+    },
+    "OOMKilled": false,
+    "Paused": false,
+    "Pid": 0,
+    "Restarting": false,
+    "Running": false,
+    "StartedAt": "2026-10-18T13:25:50.215786889Z",
+    "Status": "exited"
+  },
+  "HostConfig": {
+    "RestartPolicy": {
+      "MaximumRetryCount": 0,
+      "Name": "no"
+    }
+  },
+  "Project": "postgres-ha-dr-lab",
+  "Service": "compare-sync-primary",
+  "Entrypoint": [
+    "bash",
+    "/etc/lab/primary_entrypoint.sh"
+  ]
+}

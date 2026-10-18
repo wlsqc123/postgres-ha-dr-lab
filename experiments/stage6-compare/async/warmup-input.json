@@ -1,0 +1,70 @@
+{
+  "action": "batch",
+  "host": "compare-async-primary",
+  "requests": [
+    [
+      "8fe77650-a158-465e-be3a-619b8f2c1455",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "676aef54-a6c4-4a5f-a968-d52694657aac",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "8e952cab-d763-46bf-8647-677698db3641",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "24898ec9-8dbf-4d78-bbb5-59247f52236d",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "5853043f-f630-43c9-b0b2-d6f5fcabb63f",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "bf01baae-902d-4bb1-a1ce-5d436ff37359",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "7ccce4b5-66f4-4929-8338-732dec29a877",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "ddadf839-1539-4c15-bd64-afa2a7fda07e",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "83529b6a-2bd9-4104-8fe0-f0698eb34873",
+      1001,
+      1002,
+      1
+    ],
+    [
+      "9ee16a1f-6f87-493c-a6fd-83e3ec9d847f",
+      1001,
+      1002,
+      1
+    ]
+  ],
+  "phase": "warmup",
+  "application_name": "compare_async_warmup",
+  "log": "results/compare-20261018T132454Z-70feae5d/async/client.jsonl",
+  "output": "results/compare-20261018T132454Z-70feae5d/async/warmup-output.json"
+}

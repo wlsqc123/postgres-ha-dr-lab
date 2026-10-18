@@ -1,0 +1,60 @@
+{
+  "success": true,
+  "modes": {
+    "async": {
+      "standby_unavailable": {
+        "acknowledged": true,
+        "latency_ms": 9.31796100030624
+      },
+      "failover": {
+        "acknowledged": 321,
+        "lost_acknowledged": 10,
+        "uncertain": 0
+      },
+      "final": {
+        "valid": true,
+        "requests": 321,
+        "ledger_entries": 642,
+        "balances": {
+          "1001": 999679,
+          "1002": 1000321
+        }
+      },
+      "normal_latency_ms": {
+        "count": 300,
+        "p50": 6.397641000148724,
+        "p95": 21.54547600002843,
+        "p99": 55.871332999686274
+      }
+    },
+    "sync": {
+      "standby_unavailable": {
+        "acknowledged_while_stopped": false,
+        "wait_event": "SyncRep",
+        "observed_hold_seconds": 2,
+        "completed_latency_ms": 7088.691321999704
+      },
+      "failover": {
+        "acknowledged": 311,
+        "lost_acknowledged": 0,
+        "uncertain": 1
+      },
+      "final": {
+        "valid": true,
+        "requests": 312,
+        "ledger_entries": 624,
+        "balances": {
+          "1001": 999688,
+          "1002": 1000312
+        }
+      },
+      "normal_latency_ms": {
+        "count": 300,
+        "p50": 10.62660399975357,
+        "p95": 28.663941000104387,
+        "p99": 50.80987100018319
+      }
+    }
+  },
+  "stage5_preserved": true
+}

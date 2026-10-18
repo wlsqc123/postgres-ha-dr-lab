@@ -1,0 +1,16 @@
+{
+  "action": "batch",
+  "host": "compare-sync-primary",
+  "requests": [
+    [
+      "7110544b-245c-4919-b7bf-07c98a4d00b7",
+      1001,
+      1002,
+      1
+    ]
+  ],
+  "phase": "outage",
+  "application_name": "compare_sync_outage",
+  "log": "results/compare-20261018T132454Z-70feae5d/sync/client.jsonl",
+  "output": "results/compare-20261018T132454Z-70feae5d/sync/outage-output.json"
+}

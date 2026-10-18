@@ -1,0 +1,8 @@
+{
+  "settings": {
+    "synchronous_commit": "on",
+    "synchronous_standby_names": "FIRST 1 (standby_stage2)"
+  },
+  "samples": [],
+  "state": "uncertain"
+}

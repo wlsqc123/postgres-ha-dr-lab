@@ -1,0 +1,16 @@
+{
+  "action": "batch",
+  "host": "compare-async-primary",
+  "requests": [
+    [
+      "b4b8ca6f-4907-4bde-b4bc-ec8d396b0e67",
+      1001,
+      1002,
+      1
+    ]
+  ],
+  "phase": "outage",
+  "application_name": "compare_async_outage",
+  "log": "results/compare-20261018T132454Z-70feae5d/async/client.jsonl",
+  "output": "results/compare-20261018T132454Z-70feae5d/async/outage-output.json"
+}

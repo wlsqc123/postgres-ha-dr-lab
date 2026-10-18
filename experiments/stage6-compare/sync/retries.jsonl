@@ -1,0 +1,624 @@
+{"time_ns": 1792330181155313619, "event": "intent", "request": ["12ad84fd-7e7c-408d-a16a-cb294d4642a9", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181170440751, "event": "result", "state": "acknowledged", "request": ["12ad84fd-7e7c-408d-a16a-cb294d4642a9", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181183339944, "event": "intent", "request": ["163fa030-46fa-4314-9dd7-1710f661bb08", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181196700338, "event": "result", "state": "acknowledged", "request": ["163fa030-46fa-4314-9dd7-1710f661bb08", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181211778336, "event": "intent", "request": ["3bc0fb50-fd98-4e24-a633-d48f556dddda", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181232071756, "event": "result", "state": "acknowledged", "request": ["3bc0fb50-fd98-4e24-a633-d48f556dddda", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181244561455, "event": "intent", "request": ["677215a9-bf92-4307-9442-a2d0f0e436e6", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181262917002, "event": "result", "state": "acknowledged", "request": ["677215a9-bf92-4307-9442-a2d0f0e436e6", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181279229981, "event": "intent", "request": ["ab3ebc49-0a44-4ebc-8617-81e56de49b23", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181293793033, "event": "result", "state": "acknowledged", "request": ["ab3ebc49-0a44-4ebc-8617-81e56de49b23", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181306314329, "event": "intent", "request": ["51b926e1-0342-40d6-bb8b-3b6529277ff9", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181320880171, "event": "result", "state": "acknowledged", "request": ["51b926e1-0342-40d6-bb8b-3b6529277ff9", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181337202901, "event": "intent", "request": ["8d4f66c4-a975-44ae-9cd4-355f40b6a7fc", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181351349408, "event": "result", "state": "acknowledged", "request": ["8d4f66c4-a975-44ae-9cd4-355f40b6a7fc", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181366520737, "event": "intent", "request": ["8129cb91-cf46-40ca-9416-5a32a16878d8", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181386098968, "event": "result", "state": "acknowledged", "request": ["8129cb91-cf46-40ca-9416-5a32a16878d8", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181400861782, "event": "intent", "request": ["c75d5f9e-127b-46d3-b672-af1a5e8e584e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181415787832, "event": "result", "state": "acknowledged", "request": ["c75d5f9e-127b-46d3-b672-af1a5e8e584e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181430153661, "event": "intent", "request": ["205efea1-7ee3-4554-b447-19e449bbd252", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181444779566, "event": "result", "state": "acknowledged", "request": ["205efea1-7ee3-4554-b447-19e449bbd252", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181458219433, "event": "intent", "request": ["c6a1c954-c727-4917-ae42-4878b59c3c67", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181474535994, "event": "result", "state": "acknowledged", "request": ["c6a1c954-c727-4917-ae42-4878b59c3c67", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181486752967, "event": "intent", "request": ["eb75f3fc-45d2-43cd-81c0-6e8544d8163b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181504873073, "event": "result", "state": "acknowledged", "request": ["eb75f3fc-45d2-43cd-81c0-6e8544d8163b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181521892654, "event": "intent", "request": ["3ed1bcfa-a23c-4ae3-be8b-ad57d3c17f86", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181537655141, "event": "result", "state": "acknowledged", "request": ["3ed1bcfa-a23c-4ae3-be8b-ad57d3c17f86", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181551865223, "event": "intent", "request": ["41d35340-769d-48cc-aea4-8b4b604eae5a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181566993796, "event": "result", "state": "acknowledged", "request": ["41d35340-769d-48cc-aea4-8b4b604eae5a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181592349698, "event": "intent", "request": ["c46dfb23-7f51-40fb-86ab-1dd6e3a9d04e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181615378727, "event": "result", "state": "acknowledged", "request": ["c46dfb23-7f51-40fb-86ab-1dd6e3a9d04e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181628261238, "event": "intent", "request": ["561c321c-05ab-4227-8b07-596b638ecade", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181643616205, "event": "result", "state": "acknowledged", "request": ["561c321c-05ab-4227-8b07-596b638ecade", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181656067258, "event": "intent", "request": ["3d200922-37af-4744-8ffd-d7fcee915590", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181670565605, "event": "result", "state": "acknowledged", "request": ["3d200922-37af-4744-8ffd-d7fcee915590", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181687982981, "event": "intent", "request": ["46a7433d-aa5a-48a2-b6e2-ec05190c86e1", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181703464094, "event": "result", "state": "acknowledged", "request": ["46a7433d-aa5a-48a2-b6e2-ec05190c86e1", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181720263092, "event": "intent", "request": ["9133352b-80a5-4ccb-83f4-f5d4ef1b840d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181734337056, "event": "result", "state": "acknowledged", "request": ["9133352b-80a5-4ccb-83f4-f5d4ef1b840d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181746664189, "event": "intent", "request": ["2a8e9832-d0fa-4544-ae4b-7bebc01b2b9c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181760818566, "event": "result", "state": "acknowledged", "request": ["2a8e9832-d0fa-4544-ae4b-7bebc01b2b9c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181775062265, "event": "intent", "request": ["296ac9bd-bb36-425b-a16f-e2a7ade11ead", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181788813726, "event": "result", "state": "acknowledged", "request": ["296ac9bd-bb36-425b-a16f-e2a7ade11ead", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181801385787, "event": "intent", "request": ["f3bc4959-8d5b-47d5-afe2-aaed76e713ae", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181813194610, "event": "result", "state": "acknowledged", "request": ["f3bc4959-8d5b-47d5-afe2-aaed76e713ae", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181834229100, "event": "intent", "request": ["0d40afd0-948a-49f2-bcbe-c21c549dfcd3", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181846429955, "event": "result", "state": "acknowledged", "request": ["0d40afd0-948a-49f2-bcbe-c21c549dfcd3", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181860407826, "event": "intent", "request": ["f64dbd56-98d4-40df-ab5d-9a8412a317ec", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181874105123, "event": "result", "state": "acknowledged", "request": ["f64dbd56-98d4-40df-ab5d-9a8412a317ec", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181889519719, "event": "intent", "request": ["cf153dad-5161-4ecb-b3b4-6603af76fbdb", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181902668932, "event": "result", "state": "acknowledged", "request": ["cf153dad-5161-4ecb-b3b4-6603af76fbdb", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181916794081, "event": "intent", "request": ["1734a915-6d92-41d2-9709-b75aefcb111c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181933452631, "event": "result", "state": "acknowledged", "request": ["1734a915-6d92-41d2-9709-b75aefcb111c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181945251280, "event": "intent", "request": ["e63cd3bd-faa3-42e8-a435-101084d34f44", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181958519543, "event": "result", "state": "acknowledged", "request": ["e63cd3bd-faa3-42e8-a435-101084d34f44", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330181972200320, "event": "intent", "request": ["ef5bd6e8-3371-48fd-99ff-f0e54dafc12e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330181986715695, "event": "result", "state": "acknowledged", "request": ["ef5bd6e8-3371-48fd-99ff-f0e54dafc12e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182003821763, "event": "intent", "request": ["76a3f358-26e8-4511-915d-410c710fb9ad", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182020233137, "event": "result", "state": "acknowledged", "request": ["76a3f358-26e8-4511-915d-410c710fb9ad", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182034320799, "event": "intent", "request": ["368f31a5-abd3-40d1-957c-a884e2928dbf", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182047933585, "event": "result", "state": "acknowledged", "request": ["368f31a5-abd3-40d1-957c-a884e2928dbf", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182061455946, "event": "intent", "request": ["f2c2dbae-562d-4b6a-9dd4-b8dcece5cb2d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182076622974, "event": "result", "state": "acknowledged", "request": ["f2c2dbae-562d-4b6a-9dd4-b8dcece5cb2d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182092353565, "event": "intent", "request": ["ecedc90c-8e62-46b6-ae87-b26c5d37eedf", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182108355223, "event": "result", "state": "acknowledged", "request": ["ecedc90c-8e62-46b6-ae87-b26c5d37eedf", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182124758809, "event": "intent", "request": ["3810b46f-c6b8-4c8c-840d-2b3a944fa7ce", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182140003560, "event": "result", "state": "acknowledged", "request": ["3810b46f-c6b8-4c8c-840d-2b3a944fa7ce", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182160991946, "event": "intent", "request": ["7bbd1229-df6e-46a9-a394-338c0a172601", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182185118752, "event": "result", "state": "acknowledged", "request": ["7bbd1229-df6e-46a9-a394-338c0a172601", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182201242379, "event": "intent", "request": ["65c7a23b-fe85-4981-a750-84e9934621e3", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182214507282, "event": "result", "state": "acknowledged", "request": ["65c7a23b-fe85-4981-a750-84e9934621e3", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182228635961, "event": "intent", "request": ["58c11ad3-372f-49a8-969c-90e2849cdc0a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182243807378, "event": "result", "state": "acknowledged", "request": ["58c11ad3-372f-49a8-969c-90e2849cdc0a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182258315560, "event": "intent", "request": ["ad5b9f11-3266-4fc6-9105-26888950188f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182275089095, "event": "result", "state": "acknowledged", "request": ["ad5b9f11-3266-4fc6-9105-26888950188f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182291508898, "event": "intent", "request": ["ee9fe985-e315-4744-b21a-4bb1e9580863", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182305519008, "event": "result", "state": "acknowledged", "request": ["ee9fe985-e315-4744-b21a-4bb1e9580863", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182320664008, "event": "intent", "request": ["5c6b2435-4178-442c-b5ce-e38d2bdbb484", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182337554455, "event": "result", "state": "acknowledged", "request": ["5c6b2435-4178-442c-b5ce-e38d2bdbb484", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182351829516, "event": "intent", "request": ["e8cf5287-ca58-4f81-9fec-1d88c5143bc7", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182365643671, "event": "result", "state": "acknowledged", "request": ["e8cf5287-ca58-4f81-9fec-1d88c5143bc7", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182379728503, "event": "intent", "request": ["71370b18-81ed-44b2-9d5c-dacfcf90f822", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182394775813, "event": "result", "state": "acknowledged", "request": ["71370b18-81ed-44b2-9d5c-dacfcf90f822", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182409897656, "event": "intent", "request": ["c7e3e3a7-c998-45b6-9220-7a980c4e9076", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182424176011, "event": "result", "state": "acknowledged", "request": ["c7e3e3a7-c998-45b6-9220-7a980c4e9076", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182438336343, "event": "intent", "request": ["f3e036d0-3df8-4b58-80a8-e87f0eec03c9", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182452522020, "event": "result", "state": "acknowledged", "request": ["f3e036d0-3df8-4b58-80a8-e87f0eec03c9", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182472299957, "event": "intent", "request": ["e99462c0-6ab7-4f99-b136-e66687e40e7f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182486732139, "event": "result", "state": "acknowledged", "request": ["e99462c0-6ab7-4f99-b136-e66687e40e7f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182500986427, "event": "intent", "request": ["549a951e-6869-4822-a354-9bfec16edb4d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182517533076, "event": "result", "state": "acknowledged", "request": ["549a951e-6869-4822-a354-9bfec16edb4d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182533365928, "event": "intent", "request": ["cc48ce1c-9a15-4821-90f4-ce4af6623e8e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182549647543, "event": "result", "state": "acknowledged", "request": ["cc48ce1c-9a15-4821-90f4-ce4af6623e8e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182569845381, "event": "intent", "request": ["902b321d-27f5-4f86-8ef2-8b4fabcf8431", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182587387418, "event": "result", "state": "acknowledged", "request": ["902b321d-27f5-4f86-8ef2-8b4fabcf8431", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182602830121, "event": "intent", "request": ["ea74c3b9-3ad7-49a6-abd3-d3d410c9a22f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182617946336, "event": "result", "state": "acknowledged", "request": ["ea74c3b9-3ad7-49a6-abd3-d3d410c9a22f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182634851496, "event": "intent", "request": ["85a2b89c-1291-4787-933d-f7353f739c46", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182652668469, "event": "result", "state": "acknowledged", "request": ["85a2b89c-1291-4787-933d-f7353f739c46", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182668103332, "event": "intent", "request": ["d82eb3c8-2369-454d-918b-10d3ac33909c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182683375105, "event": "result", "state": "acknowledged", "request": ["d82eb3c8-2369-454d-918b-10d3ac33909c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182699051931, "event": "intent", "request": ["87ac6af8-3476-495a-92bb-0392f31a4ff1", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182714156026, "event": "result", "state": "acknowledged", "request": ["87ac6af8-3476-495a-92bb-0392f31a4ff1", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182728857706, "event": "intent", "request": ["7e75c7ce-5940-402b-ab22-51b5f48a5cf4", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182745592721, "event": "result", "state": "acknowledged", "request": ["7e75c7ce-5940-402b-ab22-51b5f48a5cf4", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182762850052, "event": "intent", "request": ["826ac612-2ae7-4af4-8ebf-9dacc31f30e7", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182777737254, "event": "result", "state": "acknowledged", "request": ["826ac612-2ae7-4af4-8ebf-9dacc31f30e7", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182793450726, "event": "intent", "request": ["47db6397-eee9-4280-81ca-ba1a27874cdd", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182806823090, "event": "result", "state": "acknowledged", "request": ["47db6397-eee9-4280-81ca-ba1a27874cdd", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182820958919, "event": "intent", "request": ["2019e133-13bd-46e4-81d4-da66cd013b52", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182834188264, "event": "result", "state": "acknowledged", "request": ["2019e133-13bd-46e4-81d4-da66cd013b52", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182854640581, "event": "intent", "request": ["b8764acd-e276-49af-8ae1-d0e379edb90c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182871010036, "event": "result", "state": "acknowledged", "request": ["b8764acd-e276-49af-8ae1-d0e379edb90c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182883993613, "event": "intent", "request": ["31e3c9fe-405d-460c-ae8d-b79309bbdf6b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182897038450, "event": "result", "state": "acknowledged", "request": ["31e3c9fe-405d-460c-ae8d-b79309bbdf6b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182910399319, "event": "intent", "request": ["de0f6f5f-f1ca-421f-bf1b-97f77858e5f8", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182922872559, "event": "result", "state": "acknowledged", "request": ["de0f6f5f-f1ca-421f-bf1b-97f77858e5f8", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182935372237, "event": "intent", "request": ["9d420b2c-79b1-4c84-8472-15ac3c567b11", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182946643910, "event": "result", "state": "acknowledged", "request": ["9d420b2c-79b1-4c84-8472-15ac3c567b11", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182960632391, "event": "intent", "request": ["0a5c5805-6d91-426c-b7cb-c8bbab4e340d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330182974419119, "event": "result", "state": "acknowledged", "request": ["0a5c5805-6d91-426c-b7cb-c8bbab4e340d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330182988690444, "event": "intent", "request": ["4a5f4b22-3454-4ee0-bd34-ef119706827e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183002726802, "event": "result", "state": "acknowledged", "request": ["4a5f4b22-3454-4ee0-bd34-ef119706827e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183013883749, "event": "intent", "request": ["901bca77-fb4a-4b29-b8d9-acfb73692083", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183026735403, "event": "result", "state": "acknowledged", "request": ["901bca77-fb4a-4b29-b8d9-acfb73692083", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183040981250, "event": "intent", "request": ["785dfdde-8ac5-44a0-af39-3107f0e7c40b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183058036718, "event": "result", "state": "acknowledged", "request": ["785dfdde-8ac5-44a0-af39-3107f0e7c40b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183070610231, "event": "intent", "request": ["dca52929-7a06-422e-8834-5f26667aa9f7", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183085189799, "event": "result", "state": "acknowledged", "request": ["dca52929-7a06-422e-8834-5f26667aa9f7", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183098607629, "event": "intent", "request": ["c3e66724-603d-42cb-aa37-2b13216434fc", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183114533344, "event": "result", "state": "acknowledged", "request": ["c3e66724-603d-42cb-aa37-2b13216434fc", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183127228024, "event": "intent", "request": ["4e66012a-94b2-4a3f-955a-532af6d6e7eb", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183142308859, "event": "result", "state": "acknowledged", "request": ["4e66012a-94b2-4a3f-955a-532af6d6e7eb", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183155544367, "event": "intent", "request": ["31933832-89b8-4069-98d0-0956c51e586f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183169811290, "event": "result", "state": "acknowledged", "request": ["31933832-89b8-4069-98d0-0956c51e586f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183184367459, "event": "intent", "request": ["10d6fb3e-bc96-4b32-b1a0-6797ca17c060", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183201900153, "event": "result", "state": "acknowledged", "request": ["10d6fb3e-bc96-4b32-b1a0-6797ca17c060", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183214949758, "event": "intent", "request": ["543dc611-c8f2-4ab8-88d2-df724d7cfb86", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183228204425, "event": "result", "state": "acknowledged", "request": ["543dc611-c8f2-4ab8-88d2-df724d7cfb86", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183241100715, "event": "intent", "request": ["12b2c76c-a155-4de5-95c0-2a28821bc2c2", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183254271888, "event": "result", "state": "acknowledged", "request": ["12b2c76c-a155-4de5-95c0-2a28821bc2c2", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183268310105, "event": "intent", "request": ["50189671-d4c0-4d15-b2c9-3838cf2a2b3a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183280492178, "event": "result", "state": "acknowledged", "request": ["50189671-d4c0-4d15-b2c9-3838cf2a2b3a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183296904670, "event": "intent", "request": ["9bfc3ca2-ae82-4e92-919f-00e38f88651c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183312754105, "event": "result", "state": "acknowledged", "request": ["9bfc3ca2-ae82-4e92-919f-00e38f88651c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183328483938, "event": "intent", "request": ["cf1664e4-4afe-476e-b80e-642b5b296f65", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183343644643, "event": "result", "state": "acknowledged", "request": ["cf1664e4-4afe-476e-b80e-642b5b296f65", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183357539004, "event": "intent", "request": ["095d0837-fc3d-4e09-8c7e-dbeae327f1d2", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183370372017, "event": "result", "state": "acknowledged", "request": ["095d0837-fc3d-4e09-8c7e-dbeae327f1d2", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183386767401, "event": "intent", "request": ["ee546439-32ba-4d20-a409-9d43fcbd9dfc", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183403058873, "event": "result", "state": "acknowledged", "request": ["ee546439-32ba-4d20-a409-9d43fcbd9dfc", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183417395608, "event": "intent", "request": ["b283866e-25e8-49ff-a957-98933ed79363", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183432901896, "event": "result", "state": "acknowledged", "request": ["b283866e-25e8-49ff-a957-98933ed79363", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183448469202, "event": "intent", "request": ["7e84eced-aeb3-459d-96e3-3a27c6016567", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183463171981, "event": "result", "state": "acknowledged", "request": ["7e84eced-aeb3-459d-96e3-3a27c6016567", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183478954020, "event": "intent", "request": ["bea7b0ec-3de6-4a1c-8cff-fe4e3c705840", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183491900746, "event": "result", "state": "acknowledged", "request": ["bea7b0ec-3de6-4a1c-8cff-fe4e3c705840", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183506532119, "event": "intent", "request": ["e56cb5e3-7b3b-4594-81a9-77bef239cada", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183521218381, "event": "result", "state": "acknowledged", "request": ["e56cb5e3-7b3b-4594-81a9-77bef239cada", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183536191389, "event": "intent", "request": ["aeabe11b-3e25-40bd-b817-69a575106da0", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183552028673, "event": "result", "state": "acknowledged", "request": ["aeabe11b-3e25-40bd-b817-69a575106da0", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183564846300, "event": "intent", "request": ["e2a9804f-d2a8-4c89-96d6-3272bc556e0c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183579357274, "event": "result", "state": "acknowledged", "request": ["e2a9804f-d2a8-4c89-96d6-3272bc556e0c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183594869173, "event": "intent", "request": ["846eac41-9e2d-4fe1-a6cf-3293b760dd4e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183608780599, "event": "result", "state": "acknowledged", "request": ["846eac41-9e2d-4fe1-a6cf-3293b760dd4e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183629444739, "event": "intent", "request": ["ab59f05f-c4dd-4eb0-b3db-920a0c332bbb", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183648455120, "event": "result", "state": "acknowledged", "request": ["ab59f05f-c4dd-4eb0-b3db-920a0c332bbb", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183663295938, "event": "intent", "request": ["1133b423-980f-495b-bda2-d8edcedbd106", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183679088637, "event": "result", "state": "acknowledged", "request": ["1133b423-980f-495b-bda2-d8edcedbd106", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183694745122, "event": "intent", "request": ["13da8497-7f8f-46c1-8bca-08b60d63fd57", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183711838808, "event": "result", "state": "acknowledged", "request": ["13da8497-7f8f-46c1-8bca-08b60d63fd57", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183725605104, "event": "intent", "request": ["0cc2ca2d-e9f4-4fb2-9ba8-6b5af31ff982", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183738637165, "event": "result", "state": "acknowledged", "request": ["0cc2ca2d-e9f4-4fb2-9ba8-6b5af31ff982", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183750997027, "event": "intent", "request": ["5786c045-ba9e-4295-9f00-4443bb5a5376", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183765110768, "event": "result", "state": "acknowledged", "request": ["5786c045-ba9e-4295-9f00-4443bb5a5376", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183778682499, "event": "intent", "request": ["2a9b529f-a594-445f-b380-ed68688fc1c7", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183791399476, "event": "result", "state": "acknowledged", "request": ["2a9b529f-a594-445f-b380-ed68688fc1c7", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183804850300, "event": "intent", "request": ["af5a79dc-f602-413d-b6d4-884bfeb47cc5", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183817887896, "event": "result", "state": "acknowledged", "request": ["af5a79dc-f602-413d-b6d4-884bfeb47cc5", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183831652779, "event": "intent", "request": ["66ac2b64-b4fb-41e6-9326-86091b4f9ae0", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183845039150, "event": "result", "state": "acknowledged", "request": ["66ac2b64-b4fb-41e6-9326-86091b4f9ae0", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183859147340, "event": "intent", "request": ["0937e809-5cc7-4828-9e77-9fad8d5bfee5", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183872449858, "event": "result", "state": "acknowledged", "request": ["0937e809-5cc7-4828-9e77-9fad8d5bfee5", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183885761404, "event": "intent", "request": ["c48805dc-4cfa-49cc-9d72-2d373a2e598a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183898477097, "event": "result", "state": "acknowledged", "request": ["c48805dc-4cfa-49cc-9d72-2d373a2e598a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183913344144, "event": "intent", "request": ["a68c5a8b-e4d0-4253-902e-3cfd5deb41ca", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183931518266, "event": "result", "state": "acknowledged", "request": ["a68c5a8b-e4d0-4253-902e-3cfd5deb41ca", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183950792738, "event": "intent", "request": ["5caa70cd-83de-48c1-8726-802e97eda85e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183966353445, "event": "result", "state": "acknowledged", "request": ["5caa70cd-83de-48c1-8726-802e97eda85e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330183981477303, "event": "intent", "request": ["5a9dd734-b155-484e-bf24-4899179903da", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330183996018369, "event": "result", "state": "acknowledged", "request": ["5a9dd734-b155-484e-bf24-4899179903da", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184009933809, "event": "intent", "request": ["d4f7583b-6565-4a73-9183-29fa77731782", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184023946049, "event": "result", "state": "acknowledged", "request": ["d4f7583b-6565-4a73-9183-29fa77731782", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184038045421, "event": "intent", "request": ["d363dbc0-a14d-4c26-a71f-3ee34ffa799b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184053690636, "event": "result", "state": "acknowledged", "request": ["d363dbc0-a14d-4c26-a71f-3ee34ffa799b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184068841321, "event": "intent", "request": ["886ae391-9874-49c5-a850-a7f330ff46e4", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184083650116, "event": "result", "state": "acknowledged", "request": ["886ae391-9874-49c5-a850-a7f330ff46e4", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184097691230, "event": "intent", "request": ["42c65562-81af-4129-810a-724b5009cda6", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184111594550, "event": "result", "state": "acknowledged", "request": ["42c65562-81af-4129-810a-724b5009cda6", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184124910261, "event": "intent", "request": ["251d7475-d96c-4984-93bd-57757d18646f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184142411665, "event": "result", "state": "acknowledged", "request": ["251d7475-d96c-4984-93bd-57757d18646f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184159218237, "event": "intent", "request": ["575b3c65-9153-4437-a035-d59a034a0cf8", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184172213342, "event": "result", "state": "acknowledged", "request": ["575b3c65-9153-4437-a035-d59a034a0cf8", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184185749235, "event": "intent", "request": ["b3485313-d342-4219-a392-bc1d665816b5", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184201052114, "event": "result", "state": "acknowledged", "request": ["b3485313-d342-4219-a392-bc1d665816b5", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184216443148, "event": "intent", "request": ["8159c82f-d026-4412-b7fe-7b85fe9ae1e8", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184230410055, "event": "result", "state": "acknowledged", "request": ["8159c82f-d026-4412-b7fe-7b85fe9ae1e8", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184243415648, "event": "intent", "request": ["d66392f4-18b1-416f-89ab-d9787ee822d2", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184259590085, "event": "result", "state": "acknowledged", "request": ["d66392f4-18b1-416f-89ab-d9787ee822d2", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184273064373, "event": "intent", "request": ["8478e536-2aef-4712-a381-8f6fdd2ff9f7", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184285434362, "event": "result", "state": "acknowledged", "request": ["8478e536-2aef-4712-a381-8f6fdd2ff9f7", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184298767510, "event": "intent", "request": ["77a8f249-48d7-4901-ab08-980c83d98dc5", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184312091263, "event": "result", "state": "acknowledged", "request": ["77a8f249-48d7-4901-ab08-980c83d98dc5", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184323956519, "event": "intent", "request": ["aecb9d3f-f6c9-49e2-bcb2-a11fc0f06d4b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184337784951, "event": "result", "state": "acknowledged", "request": ["aecb9d3f-f6c9-49e2-bcb2-a11fc0f06d4b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184350127325, "event": "intent", "request": ["5d957f68-90b7-41ee-9f24-bec7f43e026d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184362997897, "event": "result", "state": "acknowledged", "request": ["5d957f68-90b7-41ee-9f24-bec7f43e026d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184375336279, "event": "intent", "request": ["2a806469-f2f7-4317-a408-a589eb6ceefe", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184390083105, "event": "result", "state": "acknowledged", "request": ["2a806469-f2f7-4317-a408-a589eb6ceefe", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184403869891, "event": "intent", "request": ["ce3277db-64b1-4d17-8fbd-8cb5a5ce4b95", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184415438088, "event": "result", "state": "acknowledged", "request": ["ce3277db-64b1-4d17-8fbd-8cb5a5ce4b95", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184429862529, "event": "intent", "request": ["7daa609c-18b2-45f4-b97a-6a4e2f3d9139", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184442629390, "event": "result", "state": "acknowledged", "request": ["7daa609c-18b2-45f4-b97a-6a4e2f3d9139", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184456320192, "event": "intent", "request": ["999f6415-ab60-4119-8fd5-1ede0177582e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184470874273, "event": "result", "state": "acknowledged", "request": ["999f6415-ab60-4119-8fd5-1ede0177582e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184482915447, "event": "intent", "request": ["0e2a96e1-eb8b-42ff-85e7-20dbce746b23", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184497845788, "event": "result", "state": "acknowledged", "request": ["0e2a96e1-eb8b-42ff-85e7-20dbce746b23", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184509315293, "event": "intent", "request": ["93eca01a-f52c-4607-9e4c-48cf89c0800b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184523640441, "event": "result", "state": "acknowledged", "request": ["93eca01a-f52c-4607-9e4c-48cf89c0800b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184538117686, "event": "intent", "request": ["d1a30832-2d1b-4cf9-9682-ae57d5666971", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184553179007, "event": "result", "state": "acknowledged", "request": ["d1a30832-2d1b-4cf9-9682-ae57d5666971", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184569661684, "event": "intent", "request": ["0bdb6005-1145-4539-a114-a351fb0308ac", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184584249393, "event": "result", "state": "acknowledged", "request": ["0bdb6005-1145-4539-a114-a351fb0308ac", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184599083051, "event": "intent", "request": ["989c0519-146b-4435-a730-c9bc27768405", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184619295724, "event": "result", "state": "acknowledged", "request": ["989c0519-146b-4435-a730-c9bc27768405", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184658492816, "event": "intent", "request": ["2ba51100-19e2-4e51-a1dd-f7e28663448a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184682243018, "event": "result", "state": "acknowledged", "request": ["2ba51100-19e2-4e51-a1dd-f7e28663448a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184697246990, "event": "intent", "request": ["dce3fd98-5856-4435-aab7-977244304485", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184710370104, "event": "result", "state": "acknowledged", "request": ["dce3fd98-5856-4435-aab7-977244304485", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184723418953, "event": "intent", "request": ["d8ac3406-77b6-43f5-b832-cf33136ff24f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184736950499, "event": "result", "state": "acknowledged", "request": ["d8ac3406-77b6-43f5-b832-cf33136ff24f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184749554541, "event": "intent", "request": ["2ac0bc20-f43a-4265-8c72-de814da2e4a0", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184763899496, "event": "result", "state": "acknowledged", "request": ["2ac0bc20-f43a-4265-8c72-de814da2e4a0", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184777270404, "event": "intent", "request": ["9e0dbe66-bcd1-4946-92c2-d67f3c187b33", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184790494541, "event": "result", "state": "acknowledged", "request": ["9e0dbe66-bcd1-4946-92c2-d67f3c187b33", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184802620288, "event": "intent", "request": ["a03df79b-794f-45af-89a9-ff9e60ca111c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184818296326, "event": "result", "state": "acknowledged", "request": ["a03df79b-794f-45af-89a9-ff9e60ca111c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184830433123, "event": "intent", "request": ["60d735fa-4bfe-442e-8945-7e7df99c75b8", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184844370946, "event": "result", "state": "acknowledged", "request": ["60d735fa-4bfe-442e-8945-7e7df99c75b8", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184858137504, "event": "intent", "request": ["9fe8d22b-8afc-4d2e-bcff-a9bb93681b4a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184871109401, "event": "result", "state": "acknowledged", "request": ["9fe8d22b-8afc-4d2e-bcff-a9bb93681b4a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184883580343, "event": "intent", "request": ["baedb379-432c-43d4-8f85-6aefb0c40044", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184898188198, "event": "result", "state": "acknowledged", "request": ["baedb379-432c-43d4-8f85-6aefb0c40044", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184910334606, "event": "intent", "request": ["6266d677-7a0c-4b17-bf75-6f88110fb802", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184923480302, "event": "result", "state": "acknowledged", "request": ["6266d677-7a0c-4b17-bf75-6f88110fb802", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184936609932, "event": "intent", "request": ["f157dccf-b7d3-4d4f-b734-6f357ecf0680", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184950466267, "event": "result", "state": "acknowledged", "request": ["f157dccf-b7d3-4d4f-b734-6f357ecf0680", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184963348155, "event": "intent", "request": ["69c137e8-f0fb-4f38-9235-e08e3b5582b0", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330184976262224, "event": "result", "state": "acknowledged", "request": ["69c137e8-f0fb-4f38-9235-e08e3b5582b0", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330184988058368, "event": "intent", "request": ["38a0b953-ac70-4a21-a745-d0e19021acd9", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185000639426, "event": "result", "state": "acknowledged", "request": ["38a0b953-ac70-4a21-a745-d0e19021acd9", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185015510757, "event": "intent", "request": ["6a9dbd7b-98e4-4d6f-afec-fd6deba905d8", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185028390712, "event": "result", "state": "acknowledged", "request": ["6a9dbd7b-98e4-4d6f-afec-fd6deba905d8", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185041470608, "event": "intent", "request": ["659dbe6b-1cd0-4b9f-8883-13cdb935436c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185054968744, "event": "result", "state": "acknowledged", "request": ["659dbe6b-1cd0-4b9f-8883-13cdb935436c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185067724426, "event": "intent", "request": ["83e173e2-5587-42e3-951e-3e7f3be5fc0e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185081658203, "event": "result", "state": "acknowledged", "request": ["83e173e2-5587-42e3-951e-3e7f3be5fc0e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185096615512, "event": "intent", "request": ["0d70955c-73e2-4dd5-87b7-dd8b0454281e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185110604522, "event": "result", "state": "acknowledged", "request": ["0d70955c-73e2-4dd5-87b7-dd8b0454281e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185123604457, "event": "intent", "request": ["98afd13d-ad23-4271-9a76-296a6827260d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185137643434, "event": "result", "state": "acknowledged", "request": ["98afd13d-ad23-4271-9a76-296a6827260d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185150816493, "event": "intent", "request": ["e9d39d8a-6915-43dd-93be-536dec16f41f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185165290513, "event": "result", "state": "acknowledged", "request": ["e9d39d8a-6915-43dd-93be-536dec16f41f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185178926412, "event": "intent", "request": ["74d5cdce-ea2b-4c02-b8b9-13725859630b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185192188201, "event": "result", "state": "acknowledged", "request": ["74d5cdce-ea2b-4c02-b8b9-13725859630b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185205150226, "event": "intent", "request": ["125b06bf-7723-4252-ba8c-0246167aec22", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185218675814, "event": "result", "state": "acknowledged", "request": ["125b06bf-7723-4252-ba8c-0246167aec22", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185232124024, "event": "intent", "request": ["c99908ea-7841-4380-af57-cbb859688b0c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185245787578, "event": "result", "state": "acknowledged", "request": ["c99908ea-7841-4380-af57-cbb859688b0c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185258699350, "event": "intent", "request": ["28df0d44-43d4-486d-a80e-26fc3e9b565d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185276636040, "event": "result", "state": "acknowledged", "request": ["28df0d44-43d4-486d-a80e-26fc3e9b565d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185290017534, "event": "intent", "request": ["1e7789b8-a297-4e53-80ab-cb9f35ae3b14", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185304391146, "event": "result", "state": "acknowledged", "request": ["1e7789b8-a297-4e53-80ab-cb9f35ae3b14", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185317233923, "event": "intent", "request": ["50ac4207-c2b2-4dc2-8884-b73328a761da", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185331306688, "event": "result", "state": "acknowledged", "request": ["50ac4207-c2b2-4dc2-8884-b73328a761da", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185345665681, "event": "intent", "request": ["0177a948-dc87-4442-89fc-7c7232345c9a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185359437268, "event": "result", "state": "acknowledged", "request": ["0177a948-dc87-4442-89fc-7c7232345c9a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185372194871, "event": "intent", "request": ["3d5e37f7-d33a-4c7e-8e2a-0c0c17d3f26f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185387812021, "event": "result", "state": "acknowledged", "request": ["3d5e37f7-d33a-4c7e-8e2a-0c0c17d3f26f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185400134733, "event": "intent", "request": ["fec7717d-4b84-4b17-8ab2-14f583236f43", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185412467618, "event": "result", "state": "acknowledged", "request": ["fec7717d-4b84-4b17-8ab2-14f583236f43", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185429725938, "event": "intent", "request": ["37e72190-c669-45f3-a884-b09d727e4c58", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185445433562, "event": "result", "state": "acknowledged", "request": ["37e72190-c669-45f3-a884-b09d727e4c58", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185462834016, "event": "intent", "request": ["2d9670a1-9361-4b93-ab5b-eed6cab4ed22", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185479932224, "event": "result", "state": "acknowledged", "request": ["2d9670a1-9361-4b93-ab5b-eed6cab4ed22", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185499652982, "event": "intent", "request": ["a7f3385f-4655-4605-b870-b193c7723d0a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185519538241, "event": "result", "state": "acknowledged", "request": ["a7f3385f-4655-4605-b870-b193c7723d0a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185532900207, "event": "intent", "request": ["8d23793d-5efd-42b8-8c58-81f598380256", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185551453923, "event": "result", "state": "acknowledged", "request": ["8d23793d-5efd-42b8-8c58-81f598380256", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185570863006, "event": "intent", "request": ["0fe4c82b-4900-4514-ac1b-abc6779454cb", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185585835445, "event": "result", "state": "acknowledged", "request": ["0fe4c82b-4900-4514-ac1b-abc6779454cb", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185604355892, "event": "intent", "request": ["49972bc6-73a4-426d-b335-b9d4d6d5eb82", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185618627352, "event": "result", "state": "acknowledged", "request": ["49972bc6-73a4-426d-b335-b9d4d6d5eb82", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185633310610, "event": "intent", "request": ["f1755d7d-5088-4b15-b647-90397fd0ef12", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185647622123, "event": "result", "state": "acknowledged", "request": ["f1755d7d-5088-4b15-b647-90397fd0ef12", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185663362772, "event": "intent", "request": ["47e1b03f-4c13-47f5-b11f-65939b80cbb3", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185680123299, "event": "result", "state": "acknowledged", "request": ["47e1b03f-4c13-47f5-b11f-65939b80cbb3", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185694844485, "event": "intent", "request": ["125edf59-7678-4f7a-97c5-64d6dbd03661", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185707265532, "event": "result", "state": "acknowledged", "request": ["125edf59-7678-4f7a-97c5-64d6dbd03661", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185723863722, "event": "intent", "request": ["559d5098-41bf-44d3-a183-fa1034dd5c88", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185744978946, "event": "result", "state": "acknowledged", "request": ["559d5098-41bf-44d3-a183-fa1034dd5c88", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185759477600, "event": "intent", "request": ["e2032094-4ca4-4ccb-87d9-beb320090f15", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185771793978, "event": "result", "state": "acknowledged", "request": ["e2032094-4ca4-4ccb-87d9-beb320090f15", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185787899339, "event": "intent", "request": ["455e3502-83b1-4db7-8f81-c4ef23a6e800", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185802067958, "event": "result", "state": "acknowledged", "request": ["455e3502-83b1-4db7-8f81-c4ef23a6e800", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185813998489, "event": "intent", "request": ["1f78cca9-44ae-42ea-8e00-b04f72eb1733", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185834823009, "event": "result", "state": "acknowledged", "request": ["1f78cca9-44ae-42ea-8e00-b04f72eb1733", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185847821801, "event": "intent", "request": ["5d25f5c1-d967-4bdd-b000-42b1b6d96f5e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185860887929, "event": "result", "state": "acknowledged", "request": ["5d25f5c1-d967-4bdd-b000-42b1b6d96f5e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185873728762, "event": "intent", "request": ["81c6f5d8-df0a-4fd5-ab72-a4c37801af86", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185887978538, "event": "result", "state": "acknowledged", "request": ["81c6f5d8-df0a-4fd5-ab72-a4c37801af86", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185900887918, "event": "intent", "request": ["c18cfa7c-5fe9-45a2-be37-34175ffeb498", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185915276687, "event": "result", "state": "acknowledged", "request": ["c18cfa7c-5fe9-45a2-be37-34175ffeb498", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185931559352, "event": "intent", "request": ["706762b3-f3da-4df3-96ed-fb3e031b24b2", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185946197515, "event": "result", "state": "acknowledged", "request": ["706762b3-f3da-4df3-96ed-fb3e031b24b2", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185959933919, "event": "intent", "request": ["c08c348c-ba5e-4a2e-b10f-743925ba3697", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330185974806161, "event": "result", "state": "acknowledged", "request": ["c08c348c-ba5e-4a2e-b10f-743925ba3697", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330185987491897, "event": "intent", "request": ["f4f3da26-0855-4799-9aa4-0279930c62b8", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186001793459, "event": "result", "state": "acknowledged", "request": ["f4f3da26-0855-4799-9aa4-0279930c62b8", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186015858521, "event": "intent", "request": ["ceeb1fd6-4010-4a19-aca5-5556d7ea5fb3", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186029405976, "event": "result", "state": "acknowledged", "request": ["ceeb1fd6-4010-4a19-aca5-5556d7ea5fb3", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186042923489, "event": "intent", "request": ["7851e4f8-0032-4667-bb07-c816796de28d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186056351721, "event": "result", "state": "acknowledged", "request": ["7851e4f8-0032-4667-bb07-c816796de28d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186069713095, "event": "intent", "request": ["1323d948-1628-40b2-9f89-16553865fa7f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186082969663, "event": "result", "state": "acknowledged", "request": ["1323d948-1628-40b2-9f89-16553865fa7f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186103335719, "event": "intent", "request": ["aac62a2a-099b-42e3-b2f4-3abb2af1d965", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186115242530, "event": "result", "state": "acknowledged", "request": ["aac62a2a-099b-42e3-b2f4-3abb2af1d965", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186129621592, "event": "intent", "request": ["fc41f691-6bb8-4de8-ac5a-6ed2878d673d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186144440849, "event": "result", "state": "acknowledged", "request": ["fc41f691-6bb8-4de8-ac5a-6ed2878d673d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186158573664, "event": "intent", "request": ["79becb98-ae5b-4614-aeed-f5099db60d6d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186174847056, "event": "result", "state": "acknowledged", "request": ["79becb98-ae5b-4614-aeed-f5099db60d6d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186191721434, "event": "intent", "request": ["5490d6ba-c4f4-4600-b041-7522a4cfa5c1", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186204756975, "event": "result", "state": "acknowledged", "request": ["5490d6ba-c4f4-4600-b041-7522a4cfa5c1", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186219142577, "event": "intent", "request": ["66e9b183-d585-4270-a2b3-dbc28fdf85b6", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186233249820, "event": "result", "state": "acknowledged", "request": ["66e9b183-d585-4270-a2b3-dbc28fdf85b6", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186248082355, "event": "intent", "request": ["1a8d5633-4cee-42ae-b99a-135a88180cf3", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186264447130, "event": "result", "state": "acknowledged", "request": ["1a8d5633-4cee-42ae-b99a-135a88180cf3", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186279600921, "event": "intent", "request": ["2871394e-814e-4640-a822-8726155cebf2", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186292673890, "event": "result", "state": "acknowledged", "request": ["2871394e-814e-4640-a822-8726155cebf2", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186308317819, "event": "intent", "request": ["bc442482-abcd-4a12-bac7-fa3aad50322d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186320895883, "event": "result", "state": "acknowledged", "request": ["bc442482-abcd-4a12-bac7-fa3aad50322d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186334724066, "event": "intent", "request": ["4216ba5c-3e3f-4141-90d4-e120a8e3ce91", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186346725713, "event": "result", "state": "acknowledged", "request": ["4216ba5c-3e3f-4141-90d4-e120a8e3ce91", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186360077366, "event": "intent", "request": ["6ae27526-0c81-453d-80b9-23310f643d60", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186372586537, "event": "result", "state": "acknowledged", "request": ["6ae27526-0c81-453d-80b9-23310f643d60", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186385478303, "event": "intent", "request": ["d68afe0c-71a5-43d4-8703-9ec9f77bb5cb", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186398759130, "event": "result", "state": "acknowledged", "request": ["d68afe0c-71a5-43d4-8703-9ec9f77bb5cb", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186411600363, "event": "intent", "request": ["4ee53783-438a-4924-ba06-9e37eb721fad", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186425407054, "event": "result", "state": "acknowledged", "request": ["4ee53783-438a-4924-ba06-9e37eb721fad", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186438571376, "event": "intent", "request": ["c0573a98-0f2d-4049-a097-d60c13e59b76", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186452886323, "event": "result", "state": "acknowledged", "request": ["c0573a98-0f2d-4049-a097-d60c13e59b76", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186464165423, "event": "intent", "request": ["ae245866-0953-43d1-9dd7-3d24563c377e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186479245093, "event": "result", "state": "acknowledged", "request": ["ae245866-0953-43d1-9dd7-3d24563c377e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186491840258, "event": "intent", "request": ["80e24af0-6622-49b5-8285-82950f41e62c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186506066078, "event": "result", "state": "acknowledged", "request": ["80e24af0-6622-49b5-8285-82950f41e62c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186520688895, "event": "intent", "request": ["474f3c82-74ad-42c0-ae59-64d828f1907f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186533590477, "event": "result", "state": "acknowledged", "request": ["474f3c82-74ad-42c0-ae59-64d828f1907f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186546763458, "event": "intent", "request": ["b4e24419-dd68-4daf-980b-ba3690816de8", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186561185438, "event": "result", "state": "acknowledged", "request": ["b4e24419-dd68-4daf-980b-ba3690816de8", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186573403683, "event": "intent", "request": ["bf18c05a-5d30-4fe1-a093-fcb5bfd3869b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186589191195, "event": "result", "state": "acknowledged", "request": ["bf18c05a-5d30-4fe1-a093-fcb5bfd3869b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186602413036, "event": "intent", "request": ["f185eb96-8596-4624-bbae-70753799b778", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186615834337, "event": "result", "state": "acknowledged", "request": ["f185eb96-8596-4624-bbae-70753799b778", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186629118100, "event": "intent", "request": ["0e2ce546-f064-48ce-9185-79ddbc4e3ea4", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186642831640, "event": "result", "state": "acknowledged", "request": ["0e2ce546-f064-48ce-9185-79ddbc4e3ea4", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186658030949, "event": "intent", "request": ["83911f16-f5b9-4e8b-aa45-ae84831c7827", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186671869565, "event": "result", "state": "acknowledged", "request": ["83911f16-f5b9-4e8b-aa45-ae84831c7827", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186685960937, "event": "intent", "request": ["ebe7440c-7403-4349-b76b-1b880175c05c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186701857060, "event": "result", "state": "acknowledged", "request": ["ebe7440c-7403-4349-b76b-1b880175c05c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186715191118, "event": "intent", "request": ["ef72c458-b11c-448e-b3d5-7fba6312866f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186730065164, "event": "result", "state": "acknowledged", "request": ["ef72c458-b11c-448e-b3d5-7fba6312866f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186743032171, "event": "intent", "request": ["ac7f9cf5-45d3-4537-9ef7-71a18109a919", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186757370796, "event": "result", "state": "acknowledged", "request": ["ac7f9cf5-45d3-4537-9ef7-71a18109a919", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186771076247, "event": "intent", "request": ["b61d251c-bb1c-41e4-a619-b116da058342", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186784876561, "event": "result", "state": "acknowledged", "request": ["b61d251c-bb1c-41e4-a619-b116da058342", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186799491387, "event": "intent", "request": ["eb8725a3-2640-4485-ae9b-a9f45e8613af", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186812496790, "event": "result", "state": "acknowledged", "request": ["eb8725a3-2640-4485-ae9b-a9f45e8613af", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186825954559, "event": "intent", "request": ["b3ba9869-4db4-4796-9dc1-f2f1a83429c1", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186841755472, "event": "result", "state": "acknowledged", "request": ["b3ba9869-4db4-4796-9dc1-f2f1a83429c1", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186855481930, "event": "intent", "request": ["85832ede-0832-4333-a406-6db8c2d1a10f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186868767712, "event": "result", "state": "acknowledged", "request": ["85832ede-0832-4333-a406-6db8c2d1a10f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186883071417, "event": "intent", "request": ["8b4295fa-a5a4-43f4-afb7-e3b88f265702", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186896322044, "event": "result", "state": "acknowledged", "request": ["8b4295fa-a5a4-43f4-afb7-e3b88f265702", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186909936573, "event": "intent", "request": ["1d842fef-99b5-4ecf-9884-1bd816e3ff1a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186923090500, "event": "result", "state": "acknowledged", "request": ["1d842fef-99b5-4ecf-9884-1bd816e3ff1a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186935701657, "event": "intent", "request": ["cebb2204-df21-48ac-8beb-e93e830706f4", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186949535036, "event": "result", "state": "acknowledged", "request": ["cebb2204-df21-48ac-8beb-e93e830706f4", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186961299799, "event": "intent", "request": ["d117ca27-a72d-4ab1-a50d-ca00b9cb8269", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330186975919055, "event": "result", "state": "acknowledged", "request": ["d117ca27-a72d-4ab1-a50d-ca00b9cb8269", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330186988903243, "event": "intent", "request": ["e7cb8e69-d2ff-45a3-b84e-ea12268bcf86", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187001558232, "event": "result", "state": "acknowledged", "request": ["e7cb8e69-d2ff-45a3-b84e-ea12268bcf86", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187017176762, "event": "intent", "request": ["34e9c7bc-2fcc-4342-a642-558d17149de2", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187031272987, "event": "result", "state": "acknowledged", "request": ["34e9c7bc-2fcc-4342-a642-558d17149de2", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187043935195, "event": "intent", "request": ["557f967b-f45c-4e6a-b6aa-149ad9ebd2de", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187056859190, "event": "result", "state": "acknowledged", "request": ["557f967b-f45c-4e6a-b6aa-149ad9ebd2de", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187069828821, "event": "intent", "request": ["70e273dd-adec-4042-a890-b1657c163058", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187084022677, "event": "result", "state": "acknowledged", "request": ["70e273dd-adec-4042-a890-b1657c163058", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187099326310, "event": "intent", "request": ["685ebb0d-b965-432a-b05c-85a4b770a3c7", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187112375220, "event": "result", "state": "acknowledged", "request": ["685ebb0d-b965-432a-b05c-85a4b770a3c7", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187125032041, "event": "intent", "request": ["ef4aba87-540b-400d-93bc-c3d09dc84507", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187140286944, "event": "result", "state": "acknowledged", "request": ["ef4aba87-540b-400d-93bc-c3d09dc84507", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187154961768, "event": "intent", "request": ["3a0abd9b-c7d0-42db-9161-619cae1c4a33", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187169446163, "event": "result", "state": "acknowledged", "request": ["3a0abd9b-c7d0-42db-9161-619cae1c4a33", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187182882794, "event": "intent", "request": ["5997e31b-cea8-4b97-96f7-574afe4ef40b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187198205717, "event": "result", "state": "acknowledged", "request": ["5997e31b-cea8-4b97-96f7-574afe4ef40b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187208784018, "event": "intent", "request": ["47875000-1785-410d-88f2-c69a69f48650", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187221382822, "event": "result", "state": "acknowledged", "request": ["47875000-1785-410d-88f2-c69a69f48650", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187234270580, "event": "intent", "request": ["20c6f83d-2c96-4614-a837-0e46119290c4", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187247057692, "event": "result", "state": "acknowledged", "request": ["20c6f83d-2c96-4614-a837-0e46119290c4", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187259383588, "event": "intent", "request": ["79d8e434-6b0b-4214-98f9-624a57639ba0", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187274841200, "event": "result", "state": "acknowledged", "request": ["79d8e434-6b0b-4214-98f9-624a57639ba0", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187289019447, "event": "intent", "request": ["1592fcd5-8c45-43bf-840d-f4c6e3c9c9f3", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187299070978, "event": "result", "state": "acknowledged", "request": ["1592fcd5-8c45-43bf-840d-f4c6e3c9c9f3", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187312119936, "event": "intent", "request": ["12828b0e-d32c-49f0-b6d5-610a09d94820", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187325070399, "event": "result", "state": "acknowledged", "request": ["12828b0e-d32c-49f0-b6d5-610a09d94820", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187342609794, "event": "intent", "request": ["4c7d8c2d-7f7d-4ceb-a5c5-07cef9257519", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187355445482, "event": "result", "state": "acknowledged", "request": ["4c7d8c2d-7f7d-4ceb-a5c5-07cef9257519", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187367968009, "event": "intent", "request": ["42d7548d-ce3b-40f7-9f40-d58dce07a4e7", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187382539207, "event": "result", "state": "acknowledged", "request": ["42d7548d-ce3b-40f7-9f40-d58dce07a4e7", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187394409435, "event": "intent", "request": ["813228b0-856a-41db-868c-d21f5b76cd5b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187407135918, "event": "result", "state": "acknowledged", "request": ["813228b0-856a-41db-868c-d21f5b76cd5b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187420662893, "event": "intent", "request": ["6dc7aef8-a120-40dd-a500-9228cb8e8616", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187434350277, "event": "result", "state": "acknowledged", "request": ["6dc7aef8-a120-40dd-a500-9228cb8e8616", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187448196703, "event": "intent", "request": ["a1f84fe6-b6dc-4ac7-b5e7-2ec8cf3e9a76", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187460460798, "event": "result", "state": "acknowledged", "request": ["a1f84fe6-b6dc-4ac7-b5e7-2ec8cf3e9a76", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187472737417, "event": "intent", "request": ["39f800f0-b181-49e7-8d45-5362198a9666", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187486929618, "event": "result", "state": "acknowledged", "request": ["39f800f0-b181-49e7-8d45-5362198a9666", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187500784328, "event": "intent", "request": ["e6ba0324-bfcc-4845-b2a8-5ee049f5c927", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187515114915, "event": "result", "state": "acknowledged", "request": ["e6ba0324-bfcc-4845-b2a8-5ee049f5c927", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187529885084, "event": "intent", "request": ["66c84ae3-18d6-4152-be10-603d278dfe8c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187544248232, "event": "result", "state": "acknowledged", "request": ["66c84ae3-18d6-4152-be10-603d278dfe8c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187557156222, "event": "intent", "request": ["bcc8b5ab-1724-4f0e-909b-b4d1d2faa6ac", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187572558649, "event": "result", "state": "acknowledged", "request": ["bcc8b5ab-1724-4f0e-909b-b4d1d2faa6ac", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187590046972, "event": "intent", "request": ["73167367-2d25-45b2-82a4-74f1fdd9cad0", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187604952026, "event": "result", "state": "acknowledged", "request": ["73167367-2d25-45b2-82a4-74f1fdd9cad0", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187617155618, "event": "intent", "request": ["1e28b34f-1c20-4cc6-85ad-661f4e104a7b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187634355253, "event": "result", "state": "acknowledged", "request": ["1e28b34f-1c20-4cc6-85ad-661f4e104a7b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187647829714, "event": "intent", "request": ["f9045b12-4de3-452f-8b8a-242551a32af2", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187661108391, "event": "result", "state": "acknowledged", "request": ["f9045b12-4de3-452f-8b8a-242551a32af2", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187682554239, "event": "intent", "request": ["48734ae0-5ef2-49ed-86bb-bc79f305e5d9", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187696434996, "event": "result", "state": "acknowledged", "request": ["48734ae0-5ef2-49ed-86bb-bc79f305e5d9", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187710060023, "event": "intent", "request": ["80fe6c92-391c-4931-95b4-6c80ce86be17", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187724178096, "event": "result", "state": "acknowledged", "request": ["80fe6c92-391c-4931-95b4-6c80ce86be17", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187737608448, "event": "intent", "request": ["69bc037f-b973-4604-98ea-d9a0397d98fe", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187752464963, "event": "result", "state": "acknowledged", "request": ["69bc037f-b973-4604-98ea-d9a0397d98fe", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187768212947, "event": "intent", "request": ["af0e4bda-ad93-4887-be2a-4cecdb95d39c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187780094913, "event": "result", "state": "acknowledged", "request": ["af0e4bda-ad93-4887-be2a-4cecdb95d39c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187795613460, "event": "intent", "request": ["30c0e581-7e73-4e6d-ac87-fa0e24987a45", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187809639039, "event": "result", "state": "acknowledged", "request": ["30c0e581-7e73-4e6d-ac87-fa0e24987a45", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187825413667, "event": "intent", "request": ["30b50882-62f2-4c10-8929-5e9e0d4e518b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187838931681, "event": "result", "state": "acknowledged", "request": ["30b50882-62f2-4c10-8929-5e9e0d4e518b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187854603842, "event": "intent", "request": ["406bd457-70bf-4530-b2b1-5eecaec2907d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187870439596, "event": "result", "state": "acknowledged", "request": ["406bd457-70bf-4530-b2b1-5eecaec2907d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187884454816, "event": "intent", "request": ["c7396eaa-0663-43de-8f3d-83258900828e", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187900887848, "event": "result", "state": "acknowledged", "request": ["c7396eaa-0663-43de-8f3d-83258900828e", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187915470515, "event": "intent", "request": ["60baf1bf-00cf-496b-9e24-afa701c0f898", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187930383586, "event": "result", "state": "acknowledged", "request": ["60baf1bf-00cf-496b-9e24-afa701c0f898", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187943872204, "event": "intent", "request": ["71af188f-50cf-426e-9eaf-4527b5e0aa65", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187959077262, "event": "result", "state": "acknowledged", "request": ["71af188f-50cf-426e-9eaf-4527b5e0aa65", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187971363393, "event": "intent", "request": ["3b0c42aa-726b-4ea4-b4db-c6f183458524", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330187986084399, "event": "result", "state": "acknowledged", "request": ["3b0c42aa-726b-4ea4-b4db-c6f183458524", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330187999616823, "event": "intent", "request": ["966f7e7b-fb65-4856-a45f-eeafff3e8613", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188013128370, "event": "result", "state": "acknowledged", "request": ["966f7e7b-fb65-4856-a45f-eeafff3e8613", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188026909656, "event": "intent", "request": ["be9fd955-ffe3-4dd1-b6a6-6d6c27085359", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188040998918, "event": "result", "state": "acknowledged", "request": ["be9fd955-ffe3-4dd1-b6a6-6d6c27085359", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188053001253, "event": "intent", "request": ["101b0cd8-02e3-4ad0-b230-5f3ec9a05f6a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188066455557, "event": "result", "state": "acknowledged", "request": ["101b0cd8-02e3-4ad0-b230-5f3ec9a05f6a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188078119168, "event": "intent", "request": ["7d886985-1555-421a-8ec9-9ee5b019f3b4", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188091760048, "event": "result", "state": "acknowledged", "request": ["7d886985-1555-421a-8ec9-9ee5b019f3b4", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188105024371, "event": "intent", "request": ["cd734579-b41e-48e3-aea5-a665d2b31e39", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188116719490, "event": "result", "state": "acknowledged", "request": ["cd734579-b41e-48e3-aea5-a665d2b31e39", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188131632174, "event": "intent", "request": ["77328f93-9020-40b0-b08d-1ae40da4bf20", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188141860636, "event": "result", "state": "acknowledged", "request": ["77328f93-9020-40b0-b08d-1ae40da4bf20", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188153886777, "event": "intent", "request": ["99974ba2-0556-4d20-9983-5395b699e3d0", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188167412031, "event": "result", "state": "acknowledged", "request": ["99974ba2-0556-4d20-9983-5395b699e3d0", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188180654987, "event": "intent", "request": ["fbfb29cf-b6c1-45a7-a4e1-1e680b7f58a7", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188190978778, "event": "result", "state": "acknowledged", "request": ["fbfb29cf-b6c1-45a7-a4e1-1e680b7f58a7", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188203171020, "event": "intent", "request": ["ea02cde3-ae24-4895-8ac3-6b4cc8627f78", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188215884004, "event": "result", "state": "acknowledged", "request": ["ea02cde3-ae24-4895-8ac3-6b4cc8627f78", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188229720688, "event": "intent", "request": ["09182be8-cfe5-4497-b1d4-50a125ac3d36", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188242356529, "event": "result", "state": "acknowledged", "request": ["09182be8-cfe5-4497-b1d4-50a125ac3d36", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188255662278, "event": "intent", "request": ["ac6b6573-5b78-49f2-8134-acb5dae8f19c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188268418707, "event": "result", "state": "acknowledged", "request": ["ac6b6573-5b78-49f2-8134-acb5dae8f19c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188289108854, "event": "intent", "request": ["41574068-f744-417f-bc01-8a26401a30e0", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188302682841, "event": "result", "state": "acknowledged", "request": ["41574068-f744-417f-bc01-8a26401a30e0", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188318487667, "event": "intent", "request": ["26c72894-4c6c-4cc4-a217-3deaf1724fab", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188333120470, "event": "result", "state": "acknowledged", "request": ["26c72894-4c6c-4cc4-a217-3deaf1724fab", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188348083020, "event": "intent", "request": ["9f734892-9821-402c-a4bf-6462076e3c5b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188362974217, "event": "result", "state": "acknowledged", "request": ["9f734892-9821-402c-a4bf-6462076e3c5b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188377275348, "event": "intent", "request": ["48267825-2160-472f-82a5-f7c6aaa3d862", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188392875025, "event": "result", "state": "acknowledged", "request": ["48267825-2160-472f-82a5-f7c6aaa3d862", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188405177379, "event": "intent", "request": ["53b41e0e-68a8-438e-a8b7-8a9feb24d8dc", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188420926932, "event": "result", "state": "acknowledged", "request": ["53b41e0e-68a8-438e-a8b7-8a9feb24d8dc", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188437254301, "event": "intent", "request": ["85a27a80-18ce-4ce1-bda7-6f5c2a1bbf07", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188453541282, "event": "result", "state": "acknowledged", "request": ["85a27a80-18ce-4ce1-bda7-6f5c2a1bbf07", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188467567400, "event": "intent", "request": ["e3863230-f24f-401a-ae32-09916ae4398d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188481337604, "event": "result", "state": "acknowledged", "request": ["e3863230-f24f-401a-ae32-09916ae4398d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188495149073, "event": "intent", "request": ["a10c497e-303b-4630-9980-bfca7c929505", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188509182399, "event": "result", "state": "acknowledged", "request": ["a10c497e-303b-4630-9980-bfca7c929505", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188522538697, "event": "intent", "request": ["4e59c554-2a18-402d-a04a-dad3f8571a0f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188535345946, "event": "result", "state": "acknowledged", "request": ["4e59c554-2a18-402d-a04a-dad3f8571a0f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188550737063, "event": "intent", "request": ["c099766d-0f26-47fb-bc72-f2307f2635dd", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188572138459, "event": "result", "state": "acknowledged", "request": ["c099766d-0f26-47fb-bc72-f2307f2635dd", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188590038043, "event": "intent", "request": ["3a0bb48a-c43e-4e57-b137-262a9b3a7af5", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188602197647, "event": "result", "state": "acknowledged", "request": ["3a0bb48a-c43e-4e57-b137-262a9b3a7af5", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188616222776, "event": "intent", "request": ["50473ed5-3b3b-4aa7-a233-f484cf6ad8f6", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188631058315, "event": "result", "state": "acknowledged", "request": ["50473ed5-3b3b-4aa7-a233-f484cf6ad8f6", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188646092038, "event": "intent", "request": ["bbc8c8a6-46c3-4347-9249-111eb133a3d5", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188658221385, "event": "result", "state": "acknowledged", "request": ["bbc8c8a6-46c3-4347-9249-111eb133a3d5", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188673537839, "event": "intent", "request": ["62556129-f6fd-46f5-b6b6-0ff8526f7ec7", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188686052339, "event": "result", "state": "acknowledged", "request": ["62556129-f6fd-46f5-b6b6-0ff8526f7ec7", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188700169659, "event": "intent", "request": ["134934e7-06b5-48fa-874f-ad3c20bc0983", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188713891761, "event": "result", "state": "acknowledged", "request": ["134934e7-06b5-48fa-874f-ad3c20bc0983", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188726633564, "event": "intent", "request": ["f6c96a25-227a-4771-a118-8863dcf1d30c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188739071777, "event": "result", "state": "acknowledged", "request": ["f6c96a25-227a-4771-a118-8863dcf1d30c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188751774514, "event": "intent", "request": ["0f53f4b2-62f2-4dbb-9f1c-f03dce3d4630", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188770471523, "event": "result", "state": "acknowledged", "request": ["0f53f4b2-62f2-4dbb-9f1c-f03dce3d4630", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188785187177, "event": "intent", "request": ["2dcf4945-09e2-4c2d-b370-b1be801de165", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188800709644, "event": "result", "state": "acknowledged", "request": ["2dcf4945-09e2-4c2d-b370-b1be801de165", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188813565628, "event": "intent", "request": ["5fac749f-eca7-4e5b-925c-7020b2999bc2", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188825821608, "event": "result", "state": "acknowledged", "request": ["5fac749f-eca7-4e5b-925c-7020b2999bc2", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188838152699, "event": "intent", "request": ["35bef012-5b6c-4834-83f2-d198945aa67a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188852987909, "event": "result", "state": "acknowledged", "request": ["35bef012-5b6c-4834-83f2-d198945aa67a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188869402530, "event": "intent", "request": ["53cca587-9b24-4ff0-b952-40575c1b6e9d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188885405255, "event": "result", "state": "acknowledged", "request": ["53cca587-9b24-4ff0-b952-40575c1b6e9d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188897195967, "event": "intent", "request": ["ad66617f-2248-4849-99b3-830a37a3ef5a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188911168198, "event": "result", "state": "acknowledged", "request": ["ad66617f-2248-4849-99b3-830a37a3ef5a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188924583328, "event": "intent", "request": ["32e965fc-d38f-4771-a06a-9ab348b18129", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188939006142, "event": "result", "state": "acknowledged", "request": ["32e965fc-d38f-4771-a06a-9ab348b18129", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188951482207, "event": "intent", "request": ["839ad472-c5d5-4e49-be37-77fd9424bce0", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188964206808, "event": "result", "state": "acknowledged", "request": ["839ad472-c5d5-4e49-be37-77fd9424bce0", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330188978350848, "event": "intent", "request": ["7a69a9ef-8154-495b-9527-1910a851ed4c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330188995298771, "event": "result", "state": "acknowledged", "request": ["7a69a9ef-8154-495b-9527-1910a851ed4c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189011199471, "event": "intent", "request": ["ee830c25-b9c2-4749-a102-2571fcb1f688", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189024571451, "event": "result", "state": "acknowledged", "request": ["ee830c25-b9c2-4749-a102-2571fcb1f688", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189037168471, "event": "intent", "request": ["8e13a40c-f6ff-4a43-9958-a216ed4d763a", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189049923981, "event": "result", "state": "acknowledged", "request": ["8e13a40c-f6ff-4a43-9958-a216ed4d763a", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189063373962, "event": "intent", "request": ["db42bd9f-2c96-404b-9b4a-6f9b1ed1205d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189078071917, "event": "result", "state": "acknowledged", "request": ["db42bd9f-2c96-404b-9b4a-6f9b1ed1205d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189091797251, "event": "intent", "request": ["6c960889-ec48-45d1-b0e1-173d7560c8e4", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189106663057, "event": "result", "state": "acknowledged", "request": ["6c960889-ec48-45d1-b0e1-173d7560c8e4", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189121043794, "event": "intent", "request": ["233ab4ba-6cb5-4f0c-9758-235e1f637a49", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189133150470, "event": "result", "state": "acknowledged", "request": ["233ab4ba-6cb5-4f0c-9758-235e1f637a49", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189145986359, "event": "intent", "request": ["536ae36d-ba03-4f46-b180-8374147dba63", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189159158106, "event": "result", "state": "acknowledged", "request": ["536ae36d-ba03-4f46-b180-8374147dba63", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189170844318, "event": "intent", "request": ["b0a5f661-7aba-4974-acc1-a8d06c7cea99", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189186260493, "event": "result", "state": "acknowledged", "request": ["b0a5f661-7aba-4974-acc1-a8d06c7cea99", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189199204906, "event": "intent", "request": ["05d3ce64-133b-44ca-abf4-1c793d42ee70", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189213053047, "event": "result", "state": "acknowledged", "request": ["05d3ce64-133b-44ca-abf4-1c793d42ee70", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189227009396, "event": "intent", "request": ["645ed787-f89c-4ab1-a900-d847d2aa6da7", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189241590726, "event": "result", "state": "acknowledged", "request": ["645ed787-f89c-4ab1-a900-d847d2aa6da7", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189254736346, "event": "intent", "request": ["25fe9a20-6505-4395-8e4a-40ff0d0feb0f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189268237079, "event": "result", "state": "acknowledged", "request": ["25fe9a20-6505-4395-8e4a-40ff0d0feb0f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189283531033, "event": "intent", "request": ["17db3bcc-b7a3-4b69-b9f0-ba98f403b671", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189296256312, "event": "result", "state": "acknowledged", "request": ["17db3bcc-b7a3-4b69-b9f0-ba98f403b671", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189310638674, "event": "intent", "request": ["d0cbe172-0dd7-465f-a84f-667f61300ac8", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189324654742, "event": "result", "state": "acknowledged", "request": ["d0cbe172-0dd7-465f-a84f-667f61300ac8", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189339093430, "event": "intent", "request": ["9b3bead1-7e2b-47ec-b790-3ef0ce367be1", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189353107248, "event": "result", "state": "acknowledged", "request": ["9b3bead1-7e2b-47ec-b790-3ef0ce367be1", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189367530490, "event": "intent", "request": ["bb202bc2-0b71-4edf-9350-46ae7ea9b09f", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189382643717, "event": "result", "state": "acknowledged", "request": ["bb202bc2-0b71-4edf-9350-46ae7ea9b09f", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189394999591, "event": "intent", "request": ["079eb26c-480e-4507-9d47-1df16b76800c", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189409756073, "event": "result", "state": "acknowledged", "request": ["079eb26c-480e-4507-9d47-1df16b76800c", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189423309526, "event": "intent", "request": ["4e475746-c145-4784-986d-e141766d3add", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189436738597, "event": "result", "state": "acknowledged", "request": ["4e475746-c145-4784-986d-e141766d3add", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189449995730, "event": "intent", "request": ["8814a333-33fa-4551-b9f0-ed331105c019", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189462870790, "event": "result", "state": "acknowledged", "request": ["8814a333-33fa-4551-b9f0-ed331105c019", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189477282935, "event": "intent", "request": ["b4550eb6-1f9f-4efd-b0b3-9dd05db9ec99", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189490149827, "event": "result", "state": "acknowledged", "request": ["b4550eb6-1f9f-4efd-b0b3-9dd05db9ec99", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189503611404, "event": "intent", "request": ["19fda7d6-2aff-4e98-a722-cc044d853c51", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189515937511, "event": "result", "state": "acknowledged", "request": ["19fda7d6-2aff-4e98-a722-cc044d853c51", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189528663575, "event": "intent", "request": ["f935cff2-f07e-4787-91b6-43e33eb5f31d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189540167130, "event": "result", "state": "acknowledged", "request": ["f935cff2-f07e-4787-91b6-43e33eb5f31d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189553430393, "event": "intent", "request": ["f432bd8d-8d51-4878-9b68-56af360d141d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189564914438, "event": "result", "state": "acknowledged", "request": ["f432bd8d-8d51-4878-9b68-56af360d141d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189577418995, "event": "intent", "request": ["242c2302-4e23-43fb-8e3d-33e784bb54aa", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189590153631, "event": "result", "state": "acknowledged", "request": ["242c2302-4e23-43fb-8e3d-33e784bb54aa", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189603208166, "event": "intent", "request": ["273014a9-79cb-410f-9104-b66ece382900", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189615593951, "event": "result", "state": "acknowledged", "request": ["273014a9-79cb-410f-9104-b66ece382900", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189627936176, "event": "intent", "request": ["fb9db330-a649-4403-b12f-72cb01c87054", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189641138462, "event": "result", "state": "acknowledged", "request": ["fb9db330-a649-4403-b12f-72cb01c87054", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189655033824, "event": "intent", "request": ["3420147e-201f-49cb-89e3-9814d98ad3ea", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189668642707, "event": "result", "state": "acknowledged", "request": ["3420147e-201f-49cb-89e3-9814d98ad3ea", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189684617652, "event": "intent", "request": ["60aef5e4-3cff-49d5-b9c6-f0ef7135e09d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189696492751, "event": "result", "state": "acknowledged", "request": ["60aef5e4-3cff-49d5-b9c6-f0ef7135e09d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189714042990, "event": "intent", "request": ["81039eaa-2e7b-47fc-aacd-aa1cae1cbc12", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189726349263, "event": "result", "state": "acknowledged", "request": ["81039eaa-2e7b-47fc-aacd-aa1cae1cbc12", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189741664237, "event": "intent", "request": ["c86d55f5-7efd-4ec0-a3a7-20b22cc0b160", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189760079052, "event": "result", "state": "acknowledged", "request": ["c86d55f5-7efd-4ec0-a3a7-20b22cc0b160", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189775312837, "event": "intent", "request": ["c2c3bd7d-b139-474b-8428-93626ee1c1ea", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189789000725, "event": "result", "state": "acknowledged", "request": ["c2c3bd7d-b139-474b-8428-93626ee1c1ea", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189804763314, "event": "intent", "request": ["dd913a0a-b7d9-47c0-85b8-3415efef42c1", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189820196735, "event": "result", "state": "acknowledged", "request": ["dd913a0a-b7d9-47c0-85b8-3415efef42c1", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189834139980, "event": "intent", "request": ["6032db4b-63d5-4385-8c8b-b2b6d7e470b8", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189848256492, "event": "result", "state": "acknowledged", "request": ["6032db4b-63d5-4385-8c8b-b2b6d7e470b8", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189863101522, "event": "intent", "request": ["74c17cdb-fb5e-46f1-9e28-05d8fc21060b", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189883389051, "event": "result", "state": "acknowledged", "request": ["74c17cdb-fb5e-46f1-9e28-05d8fc21060b", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189899550012, "event": "intent", "request": ["618a4a00-57df-4d2c-b3dd-97025aff5f12", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189914603156, "event": "result", "state": "acknowledged", "request": ["618a4a00-57df-4d2c-b3dd-97025aff5f12", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189931886854, "event": "intent", "request": ["3bffcb42-85d4-4976-9ee1-70ff39a8d7f1", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189950028358, "event": "result", "state": "acknowledged", "request": ["3bffcb42-85d4-4976-9ee1-70ff39a8d7f1", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330189965133249, "event": "intent", "request": ["f663b2c2-3dd3-4f49-87b9-8385b259ef83", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330189984984269, "event": "result", "state": "acknowledged", "request": ["f663b2c2-3dd3-4f49-87b9-8385b259ef83", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330190002840435, "event": "intent", "request": ["5ac6ff55-22de-454f-ae1c-b6b7bd45b6a8", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330190019315761, "event": "result", "state": "acknowledged", "request": ["5ac6ff55-22de-454f-ae1c-b6b7bd45b6a8", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330190034044507, "event": "intent", "request": ["dc577887-7106-4a64-9e55-7090266df0f9", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330190046867106, "event": "result", "state": "acknowledged", "request": ["dc577887-7106-4a64-9e55-7090266df0f9", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330190064410355, "event": "intent", "request": ["30e8393f-b1ce-4dee-beac-8acba746a6ee", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330190078178123, "event": "result", "state": "acknowledged", "request": ["30e8393f-b1ce-4dee-beac-8acba746a6ee", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330190090023495, "event": "intent", "request": ["7f08e49f-2619-4757-97e0-72d6e5c44342", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330190103564546, "event": "result", "state": "acknowledged", "request": ["7f08e49f-2619-4757-97e0-72d6e5c44342", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330190115845891, "event": "intent", "request": ["7110544b-245c-4919-b7bf-07c98a4d00b7", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330190128242714, "event": "result", "state": "acknowledged", "request": ["7110544b-245c-4919-b7bf-07c98a4d00b7", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "existing"}
+{"time_ns": 1792330190142117289, "event": "intent", "request": ["4bf2be9b-1ebc-4515-a49d-884fc302f41d", 1001, 1002, 1], "host": "compare-sync-standby"}
+{"time_ns": 1792330190155511753, "event": "result", "state": "acknowledged", "request": ["4bf2be9b-1ebc-4515-a49d-884fc302f41d", 1001, 1002, 1], "host": "compare-sync-standby", "outcome": "new"}

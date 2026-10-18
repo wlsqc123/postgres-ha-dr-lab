@@ -1,0 +1,1 @@
+{"settings": {"synchronous_commit": "on", "synchronous_standby_names": "FIRST 1 (standby_stage2)"}, "samples": [7088.691321999704], "state": "acknowledged"}

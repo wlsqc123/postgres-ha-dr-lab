@@ -1,0 +1,10 @@
+{
+  "async_fault_requested": {
+    "time_ns": 1792330094960791300,
+    "elapsed_seconds": 200.56299999996554
+  },
+  "sync_fault_requested": {
+    "time_ns": 1792330152716332100,
+    "elapsed_seconds": 258.31299999996554
+  }
+}

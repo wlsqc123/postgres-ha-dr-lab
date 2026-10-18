@@ -1,0 +1,62 @@
+# Additional isolated pairs in the same Compose project; stage 5 is untouched.
+x-source: &source
+  image: postgres:18.0-bookworm
+  restart: "no"
+  environment:
+    POSTGRES_DB: lab
+    POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-admin}
+    POSTGRES_INITDB_ARGS: --data-checksums
+    PGDATA: /data/pgdata
+  entrypoint: [bash, /etc/lab/primary_entrypoint.sh]
+  command: [postgres, -c, hba_file=/etc/lab/replication_hba.conf, -c, wal_level=replica, -c, max_wal_senders=10, -c, max_replication_slots=4, -c, max_slot_wal_keep_size=256MB, -c, synchronous_commit=on]
+  healthcheck: &health
+    test: [CMD-SHELL, "pg_isready -U postgres -d lab"]
+    interval: 2s
+    timeout: 3s
+    retries: 30
+  networks: [lab]
+x-replica: &replica
+  image: postgres:18.0-bookworm
+  restart: "no"
+  entrypoint: [bash, /etc/lab/standby_entrypoint.sh]
+  command: [postgres, -c, hba_file=/etc/lab/replication_hba.conf, -c, hot_standby=on, -c, max_slot_wal_keep_size=256MB, -c, synchronous_commit=on]
+  healthcheck: *health
+  networks: [lab]
+services:
+  compare-async-primary:
+    <<: *source
+    volumes:
+      - stage6_async_primary:/data
+      - ./config/replication_hba.conf:/etc/lab/replication_hba.conf:ro
+      - ./scripts/primary_entrypoint.sh:/etc/lab/primary_entrypoint.sh:ro
+  compare-sync-primary:
+    <<: *source
+    volumes:
+      - stage6_sync_primary:/data
+      - ./config/replication_hba.conf:/etc/lab/replication_hba.conf:ro
+      - ./scripts/primary_entrypoint.sh:/etc/lab/primary_entrypoint.sh:ro
+  compare-async-standby:
+    <<: *replica
+    environment:
+      PGDATA: /data/pgdata
+      REPLICATION_PASSWORD: ${REPLICATION_PASSWORD:-local-repl}
+      UPSTREAM_HOST: compare-async-primary
+    volumes:
+      - stage6_async_standby:/data
+      - ./config/replication_hba.conf:/etc/lab/replication_hba.conf:ro
+      - ./scripts/standby_entrypoint.sh:/etc/lab/standby_entrypoint.sh:ro
+  compare-sync-standby:
+    <<: *replica
+    environment:
+      PGDATA: /data/pgdata
+      REPLICATION_PASSWORD: ${REPLICATION_PASSWORD:-local-repl}
+      UPSTREAM_HOST: compare-sync-primary
+    volumes:
+      - stage6_sync_standby:/data
+      - ./config/replication_hba.conf:/etc/lab/replication_hba.conf:ro
+      - ./scripts/standby_entrypoint.sh:/etc/lab/standby_entrypoint.sh:ro
+volumes:
+  stage6_async_primary:
+  stage6_async_standby:
+  stage6_sync_primary:
+  stage6_sync_standby:

@@ -1,0 +1,28 @@
+{
+  "acknowledged": 321,
+  "surviving_acknowledged": 311,
+  "lost_acknowledged": [
+    "55fdae26-1c54-456f-a382-1a51cbe4ab9e",
+    "59c511a7-9ecf-43ba-a73e-4cbe6c834a2b",
+    "72dde13c-41ea-4be2-a634-319692fbf68c",
+    "74768cd7-408f-4945-83d8-2b4f9dcd6427",
+    "b95c1971-6ebf-41f6-a1df-f51e1d0fb99a",
+    "c91c144f-7ba2-4b9b-8b85-4a5b19da30ba",
+    "d17618a8-51fc-4198-9311-fb21645036cc",
+    "e14272ee-e00b-41cb-959a-b6d4e9dd209d",
+    "e581f9fa-8e5f-4084-844b-5cbc11b981bd",
+    "fa8ba556-55fc-4dc5-abf3-7ce9dc6a6dc2"
+  ],
+  "uncertain": [],
+  "uncertain_surviving": [],
+  "actual_requests": 311,
+  "validation": {
+    "valid": true,
+    "requests": 311,
+    "ledger_entries": 622,
+    "balances": {
+      "1001": 999689,
+      "1002": 1000311
+    }
+  }
+}

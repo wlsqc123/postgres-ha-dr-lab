@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "synchronous_commit": "on",
+    "synchronous_standby_names": ""
+  },
+  "samples": [
+    9.31796100030624
+  ],
+  "state": "acknowledged"
+}

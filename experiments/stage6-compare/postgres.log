@@ -1,0 +1,265 @@
+postgres-ha-dr-lab-compare-async-primary-1  | The files belonging to this database system will be owned by user "postgres".
+postgres-ha-dr-lab-compare-async-primary-1  | This user must also own the server process.
+postgres-ha-dr-lab-compare-async-primary-1  | 
+postgres-ha-dr-lab-compare-async-primary-1  | The database cluster will be initialized with locale "en_US.utf8".
+postgres-ha-dr-lab-compare-async-primary-1  | The default database encoding has accordingly been set to "UTF8".
+postgres-ha-dr-lab-compare-async-primary-1  | The default text search configuration will be set to "english".
+postgres-ha-dr-lab-compare-async-primary-1  | 
+postgres-ha-dr-lab-compare-sync-standby-1   | 
+postgres-ha-dr-lab-compare-sync-primary-1   | The files belonging to this database system will be owned by user "postgres".
+postgres-ha-dr-lab-compare-async-primary-1  | Data page checksums are enabled.
+postgres-ha-dr-lab-compare-sync-primary-1   | This user must also own the server process.
+postgres-ha-dr-lab-compare-sync-primary-1   | 
+postgres-ha-dr-lab-compare-async-standby-1  | 
+postgres-ha-dr-lab-compare-sync-standby-1   | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-ha-dr-lab-compare-sync-standby-1   | 
+postgres-ha-dr-lab-compare-sync-primary-1   | The database cluster will be initialized with locale "en_US.utf8".
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:07.558 UTC [1] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:07.559 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:07.559 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:07.585 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:07.606 UTC [39] LOG:  database system was interrupted; last known up at 2026-10-18 13:26:05 UTC
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:07.673 UTC [41] FATAL:  the database system is starting up
+postgres-ha-dr-lab-compare-sync-primary-1   | The default database encoding has accordingly been set to "UTF8".
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:09.540 UTC [39] LOG:  starting backup recovery with redo LSN 0/2000028, checkpoint LSN 0/2000080, on timeline ID 1
+postgres-ha-dr-lab-compare-async-primary-1  | 
+postgres-ha-dr-lab-compare-sync-primary-1   | The default text search configuration will be set to "english".
+postgres-ha-dr-lab-compare-sync-primary-1   | 
+postgres-ha-dr-lab-compare-sync-primary-1   | Data page checksums are enabled.
+postgres-ha-dr-lab-compare-sync-primary-1   | 
+postgres-ha-dr-lab-compare-sync-primary-1   | fixing permissions on existing directory /data/pgdata ... ok
+postgres-ha-dr-lab-compare-async-primary-1  | fixing permissions on existing directory /data/pgdata ... ok
+postgres-ha-dr-lab-compare-async-primary-1  | creating subdirectories ... ok
+postgres-ha-dr-lab-compare-async-primary-1  | selecting dynamic shared memory implementation ... posix
+postgres-ha-dr-lab-compare-async-primary-1  | selecting default "max_connections" ... 100
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:09.540 UTC [39] LOG:  entering standby mode
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:09.551 UTC [39] LOG:  redo starts at 0/2000028
+postgres-ha-dr-lab-compare-async-primary-1  | selecting default "shared_buffers" ... 128MB
+postgres-ha-dr-lab-compare-async-primary-1  | selecting default time zone ... Etc/UTC
+postgres-ha-dr-lab-compare-async-primary-1  | creating configuration files ... ok
+postgres-ha-dr-lab-compare-async-primary-1  | running bootstrap script ... ok
+postgres-ha-dr-lab-compare-async-primary-1  | performing post-bootstrap initialization ... ok
+postgres-ha-dr-lab-compare-async-primary-1  | initdb: warning: enabling "trust" authentication for local connections
+postgres-ha-dr-lab-compare-async-primary-1  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+postgres-ha-dr-lab-compare-async-primary-1  | syncing data to disk ... ok
+postgres-ha-dr-lab-compare-async-primary-1  | 
+postgres-ha-dr-lab-compare-async-primary-1  | 
+postgres-ha-dr-lab-compare-async-primary-1  | Success. You can now start the database server using:
+postgres-ha-dr-lab-compare-async-primary-1  | 
+postgres-ha-dr-lab-compare-async-primary-1  |     pg_ctl -D /data/pgdata -l logfile start
+postgres-ha-dr-lab-compare-async-primary-1  | 
+postgres-ha-dr-lab-compare-async-primary-1  | waiting for server to start....2026-10-18 13:25:12.894 UTC [56] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:12.899 UTC [56] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:12.922 UTC [62] LOG:  database system was shut down at 2026-10-18 13:25:12 UTC
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:12.931 UTC [56] LOG:  database system is ready to accept connections
+postgres-ha-dr-lab-compare-sync-primary-1   | creating subdirectories ... ok
+postgres-ha-dr-lab-compare-sync-primary-1   | selecting dynamic shared memory implementation ... posix
+postgres-ha-dr-lab-compare-sync-primary-1   | selecting default "max_connections" ... 100
+postgres-ha-dr-lab-compare-sync-primary-1   | selecting default "shared_buffers" ... 128MB
+postgres-ha-dr-lab-compare-sync-primary-1   | selecting default time zone ... Etc/UTC
+postgres-ha-dr-lab-compare-async-standby-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-ha-dr-lab-compare-sync-primary-1   | creating configuration files ... ok
+postgres-ha-dr-lab-compare-sync-primary-1   | running bootstrap script ... ok
+postgres-ha-dr-lab-compare-sync-primary-1   | performing post-bootstrap initialization ... ok
+postgres-ha-dr-lab-compare-async-primary-1  |  done
+postgres-ha-dr-lab-compare-async-primary-1  | server started
+postgres-ha-dr-lab-compare-async-primary-1  | CREATE DATABASE
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:09.556 UTC [39] LOG:  completed backup recovery with redo LSN 0/2000028 and end LSN 0/2000120
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:09.557 UTC [39] LOG:  consistent recovery state reached at 0/2000120
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:09.557 UTC [1] LOG:  database system is ready to accept read-only connections
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:26:09.597 UTC [42] LOG:  started streaming WAL from primary at 0/3000000 on timeline 1
+postgres-ha-dr-lab-compare-async-standby-1  | 
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:44.946 UTC [1] LOG:  received fast shutdown request
+postgres-ha-dr-lab-compare-async-primary-1  | 
+postgres-ha-dr-lab-compare-async-primary-1  | 
+postgres-ha-dr-lab-compare-async-primary-1  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:27.077 UTC [1] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:27.078 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-ha-dr-lab-compare-sync-primary-1   | syncing data to disk ... ok
+postgres-ha-dr-lab-compare-sync-primary-1   | 
+postgres-ha-dr-lab-compare-sync-primary-1   | 
+postgres-ha-dr-lab-compare-sync-primary-1   | Success. You can now start the database server using:
+postgres-ha-dr-lab-compare-sync-primary-1   | 
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:44.952 UTC [1] LOG:  aborting any active transactions
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:44.952 UTC [42] FATAL:  terminating walreceiver process due to administrator command
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:44.956 UTC [37] LOG:  shutting down
+postgres-ha-dr-lab-compare-sync-primary-1   |     pg_ctl -D /data/pgdata -l logfile start
+postgres-ha-dr-lab-compare-sync-primary-1   | 
+postgres-ha-dr-lab-compare-async-primary-1  | 
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:27.078 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-ha-dr-lab-compare-async-primary-1  | waiting for server to shut down....2026-10-18 13:25:13.224 UTC [56] LOG:  received fast shutdown request
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:13.231 UTC [56] LOG:  aborting any active transactions
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:13.233 UTC [56] LOG:  background worker "logical replication launcher" (PID 65) exited with exit code 1
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:13.234 UTC [60] LOG:  shutting down
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:13.239 UTC [60] LOG:  checkpoint starting: shutdown immediate
+postgres-ha-dr-lab-compare-sync-primary-1   | initdb: warning: enabling "trust" authentication for local connections
+postgres-ha-dr-lab-compare-sync-primary-1   | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+postgres-ha-dr-lab-compare-sync-primary-1   | waiting for server to start....2026-10-18 13:25:54.686 UTC [64] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:27.089 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:27.107 UTC [32] LOG:  database system was interrupted; last known up at 2026-10-18 13:25:25 UTC
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:27.219 UTC [40] FATAL:  the database system is starting up
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:28.283 UTC [32] LOG:  starting backup recovery with redo LSN 0/2000028, checkpoint LSN 0/2000080, on timeline ID 1
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:28.283 UTC [32] LOG:  entering standby mode
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:44.991 UTC [1] LOG:  database system is shut down
+postgres-ha-dr-lab-compare-sync-standby-1   | 
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:54.712 UTC [64] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:54.741 UTC [70] LOG:  database system was shut down at 2026-10-18 13:25:51 UTC
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:54.750 UTC [64] LOG:  database system is ready to accept connections
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:28.296 UTC [32] LOG:  redo starts at 0/2000028
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:28.302 UTC [32] LOG:  completed backup recovery with redo LSN 0/2000028 and end LSN 0/2000120
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:28.302 UTC [32] LOG:  consistent recovery state reached at 0/2000120
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:28.302 UTC [1] LOG:  database system is ready to accept read-only connections
+postgres-ha-dr-lab-compare-sync-primary-1   |  done
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:25:28.328 UTC [41] LOG:  started streaming WAL from primary at 0/3000000 on timeline 1
+postgres-ha-dr-lab-compare-sync-primary-1   | server started
+postgres-ha-dr-lab-compare-sync-primary-1   | CREATE DATABASE
+postgres-ha-dr-lab-compare-sync-primary-1   | 
+postgres-ha-dr-lab-compare-sync-primary-1   | 
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:13.560 UTC [60] LOG:  checkpoint complete: wrote 941 buffers (5.7%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.057 s, sync=0.247 s, total=0.327 s; sync files=303, longest=0.011 s, average=0.001 s; distance=4334 kB, estimate=4334 kB; lsn=0/1B92F30, redo lsn=0/1B92F30
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:13.599 UTC [56] LOG:  database system is shut down
+postgres-ha-dr-lab-compare-async-primary-1  |  done
+postgres-ha-dr-lab-compare-async-primary-1  | server stopped
+postgres-ha-dr-lab-compare-async-primary-1  | 
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:24.789 UTC [1] LOG:  received fast shutdown request
+postgres-ha-dr-lab-compare-sync-primary-1   | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:24.814 UTC [1] LOG:  aborting any active transactions
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:24.817 UTC [41] FATAL:  terminating walreceiver process due to administrator command
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:24.821 UTC [30] LOG:  shutting down
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:24.877 UTC [1] LOG:  database system is shut down
+postgres-ha-dr-lab-compare-async-standby-1  | 
+postgres-ha-dr-lab-compare-async-standby-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-ha-dr-lab-compare-async-standby-1  | 
+postgres-ha-dr-lab-compare-async-primary-1  | PostgreSQL init process complete; ready for start up.
+postgres-ha-dr-lab-compare-async-primary-1  | 
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:13.692 UTC [1] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:13.696 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:13.696 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-ha-dr-lab-compare-sync-primary-1   | 
+postgres-ha-dr-lab-compare-sync-primary-1   | waiting for server to shut down...2026-10-18 13:25:55.205 UTC [64] LOG:  received fast shutdown request
+postgres-ha-dr-lab-compare-sync-primary-1   | .2026-10-18 13:25:55.215 UTC [64] LOG:  aborting any active transactions
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:55.217 UTC [64] LOG:  background worker "logical replication launcher" (PID 73) exited with exit code 1
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:55.217 UTC [68] LOG:  shutting down
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:55.225 UTC [68] LOG:  checkpoint starting: shutdown immediate
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:31.473 UTC [1] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:31.474 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:31.474 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-ha-dr-lab-compare-sync-standby-1   | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-ha-dr-lab-compare-sync-standby-1   | 
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:55.556 UTC [1] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:56.079 UTC [68] LOG:  checkpoint complete: wrote 941 buffers (5.7%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.081 s, sync=0.724 s, total=0.862 s; sync files=303, longest=0.029 s, average=0.003 s; distance=4334 kB, estimate=4334 kB; lsn=0/1B92F30, redo lsn=0/1B92F30
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:31.484 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:31.555 UTC [29] LOG:  database system was shut down in recovery at 2026-10-18 13:27:24 UTC
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:31.558 UTC [29] LOG:  entering standby mode
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:31.565 UTC [29] LOG:  redo starts at 0/2000028
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:31.570 UTC [29] LOG:  consistent recovery state reached at 0/30B2418
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:31.570 UTC [29] LOG:  invalid record length at 0/30B2418: expected at least 24, got 0
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:56.112 UTC [64] LOG:  database system is shut down
+postgres-ha-dr-lab-compare-sync-primary-1   |  done
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:13.715 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:13.740 UTC [78] LOG:  database system was shut down at 2026-10-18 13:25:13 UTC
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:13.749 UTC [1] LOG:  database system is ready to accept connections
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:55.561 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:25.245 UTC [76] LOG:  checkpoint starting: immediate force wait
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:55.561 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:25.451 UTC [76] LOG:  checkpoint complete: wrote 68 buffers (0.4%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.014 s, sync=0.084 s, total=0.207 s; sync files=51, longest=0.014 s, average=0.002 s; distance=4532 kB, estimate=4532 kB; lsn=0/2000080, redo lsn=0/2000028
+postgres-ha-dr-lab-compare-async-primary-1  | 2026-10-18 13:25:33.266 UTC [1] LOG:  received SIGHUP, reloading configuration files
+postgres-ha-dr-lab-compare-sync-primary-1   | server stopped
+postgres-ha-dr-lab-compare-sync-primary-1   | 
+postgres-ha-dr-lab-compare-sync-primary-1   | PostgreSQL init process complete; ready for start up.
+postgres-ha-dr-lab-compare-sync-primary-1   | 
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:56.270 UTC [1] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:31.570 UTC [1] LOG:  database system is ready to accept read-only connections
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:56.270 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:56.271 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:55.584 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:55.613 UTC [29] LOG:  database system was shut down in recovery at 2026-10-18 13:27:44 UTC
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:55.614 UTC [29] LOG:  entering standby mode
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:27:31.590 UTC [30] LOG:  started streaming WAL from primary at 0/3000000 on timeline 1
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:11.952 UTC [1] LOG:  received fast shutdown request
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:11.959 UTC [1] LOG:  aborting any active transactions
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:11.959 UTC [30] FATAL:  terminating walreceiver process due to administrator command
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:11.962 UTC [27] LOG:  shutting down
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:55.626 UTC [29] LOG:  redo starts at 0/2000028
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:55.631 UTC [29] LOG:  consistent recovery state reached at 0/30B9EE0
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:55.631 UTC [29] LOG:  invalid record length at 0/30B9EE0: expected at least 24, got 0
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:55.631 UTC [1] LOG:  database system is ready to accept read-only connections
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:27:55.660 UTC [30] LOG:  started streaming WAL from primary at 0/3000000 on timeline 1
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:06.892 UTC [1] LOG:  received fast shutdown request
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:12.006 UTC [1] LOG:  database system is shut down
+postgres-ha-dr-lab-compare-async-standby-1  | 
+postgres-ha-dr-lab-compare-async-standby-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-ha-dr-lab-compare-async-standby-1  | 
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:25.298 UTC [1] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:25.298 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:06.905 UTC [1] LOG:  aborting any active transactions
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:25.298 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:25.323 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:25.343 UTC [29] LOG:  database system was shut down in recovery at 2026-10-18 13:28:11 UTC
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:56.286 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:25.344 UTC [29] LOG:  entering standby mode
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:06.905 UTC [30] FATAL:  terminating walreceiver process due to administrator command
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:06.909 UTC [27] LOG:  shutting down
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:06.942 UTC [1] LOG:  database system is shut down
+postgres-ha-dr-lab-compare-sync-standby-1   | 
+postgres-ha-dr-lab-compare-sync-standby-1   | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-ha-dr-lab-compare-sync-standby-1   | 
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:22.320 UTC [1] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:22.321 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:22.321 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:22.331 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:22.355 UTC [29] LOG:  database system was shut down in recovery at 2026-10-18 13:29:06 UTC
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:22.356 UTC [29] LOG:  entering standby mode
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:22.363 UTC [29] LOG:  redo starts at 0/2000028
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:22.369 UTC [29] LOG:  consistent recovery state reached at 0/30C2988
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:22.369 UTC [29] LOG:  invalid record length at 0/30C2988: expected at least 24, got 0
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:22.369 UTC [1] LOG:  database system is ready to accept read-only connections
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:26.457 UTC [29] LOG:  received promote request
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:30.381 UTC [30] FATAL:  streaming replication receiver "walreceiver" could not connect to the primary server: could not translate host name "compare-sync-primary" to address: Temporary failure in name resolution
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:30.381 UTC [29] LOG:  redo done at 0/30C2950 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 8.01 s
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:30.381 UTC [29] LOG:  last completed transaction was at log time 2026-10-18 13:28:14.260619+00
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:30.397 UTC [29] LOG:  selected new timeline ID: 2
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:30.459 UTC [29] LOG:  archive recovery complete
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:30.473 UTC [27] LOG:  checkpoint starting: force
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:30.475 UTC [1] LOG:  database system is ready to accept connections
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:34.700 UTC [27] LOG:  checkpoint complete: wrote 85 buffers (0.5%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=4.144 s, sync=0.048 s, total=4.228 s; sync files=34, longest=0.017 s, average=0.002 s; distance=17162 kB, estimate=17162 kB; lsn=0/30C2A18, redo lsn=0/30C29C0
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:34.700 UTC [27] LOG:  checkpoint starting: immediate force wait
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:34.725 UTC [27] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.026 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=15446 kB; lsn=0/30C2AE8, redo lsn=0/30C2A90
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:59.322 UTC [1] LOG:  received fast shutdown request
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:59.331 UTC [1] LOG:  aborting any active transactions
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:59.334 UTC [1] LOG:  background worker "logical replication launcher" (PID 61) exited with exit code 1
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:59.334 UTC [27] LOG:  shutting down
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:59.341 UTC [27] LOG:  checkpoint starting: shutdown immediate
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:59.425 UTC [27] LOG:  checkpoint complete: wrote 20 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.017 s, sync=0.028 s, total=0.091 s; sync files=12, longest=0.010 s, average=0.003 s; distance=107 kB, estimate=13912 kB; lsn=0/30DD7E0, redo lsn=0/30DD7E0
+postgres-ha-dr-lab-compare-sync-standby-1   | 2026-10-18 13:29:59.457 UTC [1] LOG:  database system is shut down
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:56.307 UTC [86] LOG:  database system was shut down at 2026-10-18 13:25:56 UTC
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:25:56.327 UTC [1] LOG:  database system is ready to accept connections
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:26:05.719 UTC [84] LOG:  checkpoint starting: immediate force wait
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:26:05.952 UTC [84] LOG:  checkpoint complete: wrote 68 buffers (0.4%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.027 s, sync=0.127 s, total=0.234 s; sync files=51, longest=0.013 s, average=0.003 s; distance=4532 kB, estimate=4532 kB; lsn=0/2000080, redo lsn=0/2000028
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:26:14.203 UTC [1] LOG:  received SIGHUP, reloading configuration files
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:25.351 UTC [29] LOG:  redo starts at 0/2000028
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:25.357 UTC [29] LOG:  consistent recovery state reached at 0/30C2390
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:25.357 UTC [29] LOG:  invalid record length at 0/30C2390: expected at least 24, got 0
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:25.357 UTC [1] LOG:  database system is ready to accept read-only connections
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:30.217 UTC [29] LOG:  received promote request
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:33.371 UTC [30] FATAL:  streaming replication receiver "walreceiver" could not connect to the primary server: could not translate host name "compare-async-primary" to address: Temporary failure in name resolution
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:33.371 UTC [29] LOG:  redo done at 0/30C2358 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 8.01 s
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:33.371 UTC [29] LOG:  last completed transaction was at log time 2026-10-18 13:27:33.319158+00
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:33.379 UTC [29] LOG:  selected new timeline ID: 2
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:33.439 UTC [29] LOG:  archive recovery complete
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:33.454 UTC [27] LOG:  checkpoint starting: force
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:26:14.203 UTC [1] LOG:  parameter "synchronous_standby_names" changed to "FIRST 1 (standby_stage2)"
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:33.457 UTC [1] LOG:  database system is ready to accept connections
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:26:21.414 UTC [148] LOG:  standby "standby_stage2" is now a synchronous standby with priority 1
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:26:21.414 UTC [148] STATEMENT:  START_REPLICATION SLOT "standby_stage2" 0/3000000 TIMELINE 1
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:27:55.661 UTC [562] LOG:  standby "standby_stage2" is now a synchronous standby with priority 1
+postgres-ha-dr-lab-compare-sync-primary-1   | 2026-10-18 13:27:55.661 UTC [562] STATEMENT:  START_REPLICATION SLOT "standby_stage2" 0/3000000 TIMELINE 1
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:36.428 UTC [27] LOG:  checkpoint complete: wrote 85 buffers (0.5%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=2.906 s, sync=0.039 s, total=2.974 s; sync files=33, longest=0.015 s, average=0.002 s; distance=17160 kB, estimate=17160 kB; lsn=0/30C2420, redo lsn=0/30C23C8
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:36.428 UTC [27] LOG:  checkpoint starting: immediate force wait
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:28:36.452 UTC [27] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.024 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=15444 kB; lsn=0/30C24F0, redo lsn=0/30C2498
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:29:59.345 UTC [1] LOG:  received fast shutdown request
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:29:59.352 UTC [1] LOG:  aborting any active transactions
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:29:59.354 UTC [1] LOG:  background worker "logical replication launcher" (PID 60) exited with exit code 1
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:29:59.355 UTC [27] LOG:  shutting down
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:29:59.363 UTC [27] LOG:  checkpoint starting: shutdown immediate
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:29:59.430 UTC [27] LOG:  checkpoint complete: wrote 23 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.021 s, total=0.075 s; sync files=12, longest=0.007 s, average=0.002 s; distance=123 kB, estimate=13912 kB; lsn=0/30E1420, redo lsn=0/30E1420
+postgres-ha-dr-lab-compare-async-standby-1  | 2026-10-18 13:29:59.456 UTC [1] LOG:  database system is shut down
