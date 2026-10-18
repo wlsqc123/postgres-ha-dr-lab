@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "method": "new-base-backup",
+  "run_id": "20261018T123812Z-751f42ae",
+  "old_volume_preserved": "postgres-ha-dr-lab_primary_stage1",
+  "new_volume": "postgres-ha-dr-lab_primary_stage5",
+  "primary_service": "standby",
+  "standby_service": "primary",
+  "basebackup_to_healthy_seconds": 5.858999999938533,
+  "new_transaction_replicated": true,
+  "standby_write_rejected": true,
+  "standby_restart_verified": true,
+  "validation": {
+    "valid": true,
+    "requests": 206,
+    "ledger_entries": 412,
+    "balances": {
+      "399586296": 999778,
+      "399586297": 1000222
+    }
+  }
+}

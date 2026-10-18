@@ -14,8 +14,13 @@ if [ ! -f "$PGDATA/PG_VERSION" ]; then
         exit 1
     fi
     export PGPASSWORD="$REPLICATION_PASSWORD"
-    pg_basebackup --dbname='host=primary user=replicator application_name=standby_stage2' \
-        -D "$PGDATA" -R -X stream -S standby_stage2 --checkpoint=fast
+    backup_options=()
+    if [ "${CREATE_REPLICATION_SLOT:-false}" = true ]; then
+        backup_options+=(--create-slot)
+    fi
+    pg_basebackup --dbname="host=${UPSTREAM_HOST:-primary} user=replicator application_name=${APPLICATION_NAME:-standby_stage2}" \
+        -D "$PGDATA" -R -X stream -S "${REPLICATION_SLOT:-standby_stage2}" \
+        --checkpoint=fast --no-clean "${backup_options[@]}"
 fi
 
 if [ ! -f "$PGDATA/standby.signal" ]; then

@@ -1,0 +1,54 @@
+postgres-ha-dr-lab-primary-1  | 
+postgres-ha-dr-lab-standby-1  | 
+postgres-ha-dr-lab-standby-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-ha-dr-lab-standby-1  | 
+postgres-ha-dr-lab-primary-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:19.501 UTC [1] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-primary-1  | 
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:26.961 UTC [1] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:26.961 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:19.502 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:26.961 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:19.502 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:26.971 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:19.515 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:19.531 UTC [32] LOG:  database system was interrupted; last known up at 2026-10-17 10:27:50 UTC
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:20.273 UTC [32] LOG:  database system was not properly shut down; automatic recovery in progress
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:20.279 UTC [32] LOG:  redo starts at 0/30C97D8
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:20.279 UTC [32] LOG:  invalid record length at 0/30C98E0: expected at least 24, got 0
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:20.279 UTC [32] LOG:  redo done at 0/30C98A8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:26.984 UTC [33] LOG:  database system was interrupted; last known up at 2026-10-18 12:38:25 UTC
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:27.559 UTC [41] FATAL:  the database system is starting up
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:27.679 UTC [33] LOG:  starting backup recovery with redo LSN 0/4000028, checkpoint LSN 0/4000080, on timeline ID 2
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:20.313 UTC [30] LOG:  checkpoint starting: end-of-recovery immediate wait
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:27.680 UTC [33] LOG:  entering standby mode
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:27.690 UTC [33] LOG:  redo starts at 0/4000028
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:27.694 UTC [33] LOG:  completed backup recovery with redo LSN 0/4000028 and end LSN 0/4000120
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:27.695 UTC [33] LOG:  consistent recovery state reached at 0/4000120
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:27.695 UTC [1] LOG:  database system is ready to accept read-only connections
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:27.711 UTC [42] LOG:  started streaming WAL from primary at 0/5000000 on timeline 2
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:20.351 UTC [30] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.008 s, total=0.044 s; sync files=3, longest=0.003 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/30C98E0, redo lsn=0/30C98E0
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:20.359 UTC [1] LOG:  database system is ready to accept connections
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:25.614 UTC [30] LOG:  checkpoint starting: immediate force wait
+postgres-ha-dr-lab-standby-1  | 2026-10-18 12:38:25.655 UTC [30] LOG:  checkpoint complete: wrote 6 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 2 recycled; write=0.002 s, sync=0.007 s, total=0.042 s; sync files=4, longest=0.005 s, average=0.002 s; distance=15577 kB, estimate=15577 kB; lsn=0/4000080, redo lsn=0/4000028
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:38.416 UTC [87] ERROR:  cannot execute INSERT in a read-only transaction
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:38.416 UTC [87] STATEMENT:  INSERT INTO accounts VALUES (0,0)
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.268 UTC [1] LOG:  received fast shutdown request
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.273 UTC [1] LOG:  aborting any active transactions
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.273 UTC [42] FATAL:  terminating walreceiver process due to administrator command
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.275 UTC [31] LOG:  shutting down
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.301 UTC [1] LOG:  database system is shut down
+postgres-ha-dr-lab-primary-1  | 
+postgres-ha-dr-lab-primary-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-ha-dr-lab-primary-1  | 
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.753 UTC [1] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.754 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.754 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.766 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.782 UTC [30] LOG:  database system was shut down in recovery at 2026-10-18 12:38:41 UTC
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.783 UTC [30] LOG:  entering standby mode
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.789 UTC [30] LOG:  redo starts at 0/4000028
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.790 UTC [30] LOG:  consistent recovery state reached at 0/5004EF0
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.790 UTC [30] LOG:  invalid record length at 0/5004EF0: expected at least 24, got 0
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.790 UTC [1] LOG:  database system is ready to accept read-only connections
+postgres-ha-dr-lab-primary-1  | 2026-10-18 12:38:41.807 UTC [31] LOG:  started streaming WAL from primary at 0/5000000 on timeline 2

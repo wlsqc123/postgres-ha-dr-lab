@@ -1,0 +1,68 @@
+{
+  "container": {
+    "Id": "2f1b2b2d2de4216a98d70f23c03856cc003cd245357adf77420ff15712682e8e",
+    "State": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 137,
+      "FinishedAt": "2026-10-17T10:22:42.092884117Z",
+      "Health": {
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "End": "2026-10-17T10:22:33.557711389Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n",
+            "Start": "2026-10-17T10:22:33.482816497Z"
+          },
+          {
+            "End": "2026-10-17T10:22:35.641178622Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n",
+            "Start": "2026-10-17T10:22:35.568442527Z"
+          },
+          {
+            "End": "2026-10-17T10:22:37.719012053Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n",
+            "Start": "2026-10-17T10:22:37.651860527Z"
+          },
+          {
+            "End": "2026-10-17T10:22:39.798568446Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n",
+            "Start": "2026-10-17T10:22:39.728631074Z"
+          },
+          {
+            "End": "2026-10-17T10:22:41.89759416Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n",
+            "Start": "2026-10-17T10:22:41.811936499Z"
+          }
+        ],
+        "Status": "unhealthy"
+      },
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 0,
+      "Restarting": false,
+      "Running": false,
+      "StartedAt": "2026-10-17T10:22:12.533096736Z",
+      "Status": "exited"
+    },
+    "HostConfig": {
+      "RestartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "no"
+      }
+    },
+    "Project": "postgres-ha-dr-lab",
+    "Service": "primary",
+    "Entrypoint": [
+      "bash",
+      "/etc/lab/primary_entrypoint.sh"
+    ]
+  },
+  "volume": "postgres-ha-dr-lab_primary_stage1",
+  "marker": "Fenced by the failover lab; rejoin before restarting."
+}

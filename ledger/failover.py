@@ -32,17 +32,18 @@ def wait(predicate, description, timeout=40):
 
 
 class Experiment:
-    def __init__(self, args):
+    def __init__(self, args, kind='failover'):
         self.args = args
         self.started = time.monotonic()
         run_id = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ') + '-' + uuid.uuid4().hex[:8]
-        self.out = ROOT / 'results' / ('failover-' + run_id)
+        self.out = ROOT / 'results' / (kind + '-' + run_id)
         self.out.mkdir(parents=True)
         self.relative = self.out.relative_to(ROOT).as_posix()
         self.events = {}
         self.worker = None
         self.streams = []
         self.run_id = run_id
+        self.compose_files = []
         save(self.out / 'invocation.json', vars(args))
 
     def event(self, name):
@@ -53,7 +54,7 @@ class Experiment:
         result = subprocess.run(args, cwd=ROOT, input=input, text=True, encoding='utf-8', errors='replace',
                                 stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         logged_stdout = result.stdout
-        if args[:3] == ['docker', 'compose', 'config']:
+        if args[:2] == ['docker', 'compose'] and 'config' in args:
             logged_stdout = '[Compose configuration omitted: contains environment secrets]'
         with (self.out / 'commands.jsonl').open('a', encoding='utf-8') as file:
             file.write(json.dumps(dict(args=args, returncode=result.returncode,
@@ -63,7 +64,7 @@ class Experiment:
         return result.stdout.strip()
 
     def compose(self, *args, input=None):
-        return self.command(['docker', 'compose', *args], input)
+        return self.command(['docker', 'compose', *self.compose_files, *args], input)
 
     def db(self, action, host='primary', **kwargs):
         payload = dict(action=action, host=host, **kwargs)

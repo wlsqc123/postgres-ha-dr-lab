@@ -1,0 +1,5 @@
+{
+  "host": "standby",
+  "recovery": false,
+  "retry_outcome": "existing"
+}

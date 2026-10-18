@@ -33,6 +33,15 @@ def execute(args):
                 outcomes.append({'request_id': request[0], 'outcome': outcome})
         return outcomes
     with connect(host, admin=True) as conn:
+        if action == 'readonly':
+            if not conn.execute('SELECT pg_is_in_recovery() AS recovery').fetchone()['recovery']:
+                raise RuntimeError('Write rejection check requires a Standby')
+            try:
+                with conn.transaction():
+                    conn.execute('INSERT INTO accounts VALUES (0,0)')
+                    raise RuntimeError('Unexpected write accepted; transaction rolled back')
+            except psycopg.errors.ReadOnlySqlTransaction as exc:
+                return dict(sqlstate=exc.sqlstate, message=str(exc))
         if action == 'snapshot':
             return snapshot(conn, args['accounts'])
         if action == 'seed':

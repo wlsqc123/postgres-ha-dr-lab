@@ -1,0 +1,28 @@
+[
+    {
+        "CreatedAt": "2026-10-16T13:28:31Z",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.project": "postgres-ha-dr-lab",
+            "com.docker.compose.version": "2.23.0",
+            "com.docker.compose.volume": "primary_stage1"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/postgres-ha-dr-lab_primary_stage1/_data",
+        "Name": "postgres-ha-dr-lab_primary_stage1",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-10-18T12:38:18Z",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.project": "postgres-ha-dr-lab",
+            "com.docker.compose.version": "2.23.0",
+            "com.docker.compose.volume": "primary_stage5"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/postgres-ha-dr-lab_primary_stage5/_data",
+        "Name": "postgres-ha-dr-lab_primary_stage5",
+        "Options": null,
+        "Scope": "local"
+    }
+]

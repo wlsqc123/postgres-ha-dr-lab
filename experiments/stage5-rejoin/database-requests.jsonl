@@ -1,0 +1,15 @@
+{"action": "state", "host": "standby"}
+{"action": "snapshot", "host": "standby", "accounts": [399586296, 399586297]}
+{"action": "state", "host": "primary"}
+{"action": "state", "host": "standby"}
+{"action": "snapshot", "host": "primary", "accounts": [399586296, 399586297]}
+{"action": "transfer", "host": "standby", "request": ["7666d3be-6d65-40c4-bf28-608e242d5ae9", 399586296, 399586297, 17]}
+{"action": "transfer", "host": "standby", "request": ["7666d3be-6d65-40c4-bf28-608e242d5ae9", 399586296, 399586297, 17]}
+{"action": "snapshot", "host": "standby", "accounts": [399586296, 399586297]}
+{"action": "snapshot", "host": "primary", "accounts": [399586296, 399586297]}
+{"action": "readonly", "host": "primary"}
+{"action": "state", "host": "primary"}
+{"action": "state", "host": "standby"}
+{"action": "state", "host": "primary"}
+{"action": "state", "host": "standby"}
+{"action": "snapshot", "host": "primary", "accounts": [399586296, 399586297]}

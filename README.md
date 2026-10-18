@@ -6,7 +6,9 @@ Primary와 Standby의 복제부터 시작해 장애 전환, 재시도 정합성,
 
 ## 현재 단계
 
-비동기 물리 스트리밍 복제를 구성하고, 쓰기 부하 중 Primary 강제 종료와 Standby 승격을 검증했습니다. 현재 실험 환경의 `primary`는 차단된 정지 상태이며, 서비스 이름이 `standby`인 서버가 새 Primary입니다. 기존 Primary 재편입은 다음 단계입니다.
+비동기 물리 스트리밍 복제, 쓰기 부하 중 장애 전환, 기존 Primary의 Standby 재편입까지 검증했습니다. 현재 서비스 이름 `standby`가 새 Primary이며 `primary`는 새 백업으로 재구성한 읽기 전용 Standby입니다. 장애 당시 디스크는 차단 표식과 함께 별도로 보존했습니다.
+
+재편입 이후에는 모든 시작·정지 작업에 `-f compose.yaml -f compose.rejoin.yaml`을 함께 지정합니다. 아래 초기 구축 명령은 장애 전환 이전 단계의 재현용입니다.
 
 장애 전후 데이터를 비교할 기준으로 계좌·원장과 요청 ID 기반 이체도 추가했습니다. 같은 요청을 재전송해도 한 번만 반영되는지, 실패한 거래가 부분 반영되지 않는지 검증합니다.
 
@@ -161,12 +163,33 @@ python -m ledger.failover --confirm-primary-kill
 
 이번 실행은 승인 159건 중 유실 0건, 관측 복구 시간 13.828초, 최종 요청 205건과 원장 410건의 정합성 검증을 통과했습니다. 한 번의 비동기 실험에서 유실이 없었다고 무손실을 보장하지 않습니다.
 
-현재 DB 확인은 `docker compose exec standby psql -U postgres -d lab`으로 합니다. 구 Primary는 재편입 절차 전까지 시작하지 않으며 차단 표식도 제거하지 않습니다.
+4단계 종료 시 구 Primary는 차단된 정지 상태였습니다. 다음 재편입 단계는 그 디스크를 보존하고 새 볼륨으로 읽기 전용 Standby를 구성합니다.
+
+## 기존 Primary 재편입
+
+4단계의 장애 전환을 마친 상태에서 한 번 실행합니다. 호스트 제어기는 구 Primary의 정지·차단 상태를 확인하고 새 Primary의 Base Backup을 별도 볼륨에 받습니다. 이 명령은 이미 재편입한 현재 환경에서 재실행하지 않습니다.
+
+```powershell
+python -m ledger.rejoin --confirm-rejoin
+```
+
+기존 `primary_stage1` 볼륨은 보존하고 새 `primary_stage5` 볼륨을 사용합니다. 새 Primary의 복제 slot `primary_stage5`와 `pg_basebackup -R -X stream`으로 Standby를 구성합니다. 이전 단계의 요청 205건에 새 이체 1건을 추가한 결과, 요청 206건·원장 412건과 잔액이 두 서버에서 일치했습니다. 같은 요청 재시도, Standby 쓰기 거부, Standby 재시작 후 복제 유지도 확인했습니다. [설명](docs/stage5-rejoin.md), [실측 결과](experiments/stage5-rejoin.json), [실행 기록](experiments/stage5-rejoin/)을 공개합니다.
+
+재편입 이후 상태 확인과 재시작에는 다음 명령을 사용합니다. runner의 기본 접속 대상도 새 Primary인 standby로 설정합니다. 서비스 이름과 DB 역할이 바뀌었으며 원래 역할로 되돌리는 failback은 수행하지 않았습니다.
+
+```powershell
+docker compose -f compose.yaml -f compose.rejoin.yaml ps
+docker compose -f compose.yaml -f compose.rejoin.yaml exec standby psql -U postgres -d lab
+docker compose -f compose.yaml -f compose.rejoin.yaml exec primary psql -U postgres -d lab
+docker compose -f compose.yaml -f compose.rejoin.yaml stop primary standby runner
+docker compose -f compose.yaml -f compose.rejoin.yaml up -d --wait standby runner primary
+```
+
+실습 중인 현재 환경을 유지하려면 마지막 두 명령을 실행할 필요는 없습니다. 기본 compose.yaml만으로 다시 시작하면 보존된 구 디스크를 가리키며 차단 장치가 시작을 거부합니다. 차단 표식을 지우거나 기존 볼륨을 삭제하지 않습니다.
 
 ## 다음 단계
 
-1. 기존 Primary를 새 Primary의 Standby로 재편입합니다.
-2. 동기·비동기 복제의 승인 지연과 장애 시 유실을 비교합니다.
-3. Base Backup과 WAL로 PITR을 수행하고 실측 결과를 정리합니다.
+1. 동기·비동기 복제의 승인 지연과 장애 시 유실을 비교합니다.
+2. Base Backup과 WAL로 PITR을 수행하고 실측 결과를 정리합니다.
 
 각 단계의 코드와 검증 결과를 확인한 뒤 다음 단계로 진행합니다.

@@ -1,0 +1,24 @@
+# Use together with compose.yaml only after the stage 4 promotion.
+services:
+  runner:
+    environment:
+      PGHOST: standby
+  primary:
+    environment:
+      UPSTREAM_HOST: standby
+      APPLICATION_NAME: primary_stage5
+      REPLICATION_SLOT: primary_stage5
+      CREATE_REPLICATION_SLOT: "true"
+      REPLICATION_PASSWORD: ${REPLICATION_PASSWORD:-local-repl}
+    entrypoint: [bash, /etc/lab/standby_entrypoint.sh]
+    volumes:
+      - primary_stage5:/data
+      - ./scripts/standby_entrypoint.sh:/etc/lab/standby_entrypoint.sh:ro
+  standby:
+    environment:
+      EXPECT_EXISTING_PRIMARY: "true"
+    entrypoint: [bash, /etc/lab/primary_entrypoint.sh]
+    volumes:
+      - ./scripts/primary_entrypoint.sh:/etc/lab/primary_entrypoint.sh:ro
+volumes:
+  primary_stage5:

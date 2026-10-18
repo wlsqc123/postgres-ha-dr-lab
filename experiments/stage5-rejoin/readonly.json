@@ -1,0 +1,4 @@
+{
+  "sqlstate": "25006",
+  "message": "cannot execute INSERT in a read-only transaction"
+}

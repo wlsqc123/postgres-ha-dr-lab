@@ -1,0 +1,14 @@
+{
+  "basebackup_started": {
+    "time_ns": 1792327104205446600,
+    "elapsed_seconds": 11.453000000095926
+  },
+  "standby_healthy": {
+    "time_ns": 1792327110056478300,
+    "elapsed_seconds": 17.31200000003446
+  },
+  "verified": {
+    "time_ns": 1792327124833394900,
+    "elapsed_seconds": 32.078000000095926
+  }
+}
