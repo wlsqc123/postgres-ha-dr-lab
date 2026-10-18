@@ -1,0 +1,59 @@
+services:
+  pitr-source:
+    image: postgres:18.0-bookworm
+    restart: "no"
+    environment:
+      POSTGRES_DB: lab
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-admin}
+      REPLICATION_PASSWORD: ${REPLICATION_PASSWORD:-local-repl}
+      POSTGRES_INITDB_ARGS: --data-checksums
+      PGDATA: /data/pgdata
+    entrypoint: [bash, /etc/lab/pitr_source_entrypoint.sh]
+    command: [postgres, -c, hba_file=/etc/lab/replication_hba.conf, -c, wal_level=replica, -c, archive_mode=on, -c, "archive_command=bash /etc/lab/archive_wal.sh %p %f"]
+    volumes:
+      - stage7_source:/data
+      - stage7_archive:/archive
+      - stage7_backup:/backup
+      - ./config/replication_hba.conf:/etc/lab/replication_hba.conf:ro
+      - ./scripts/primary_entrypoint.sh:/etc/lab/primary_entrypoint.sh:ro
+      - ./scripts/pitr_source_entrypoint.sh:/etc/lab/pitr_source_entrypoint.sh:ro
+      - ./scripts/archive_wal.sh:/etc/lab/archive_wal.sh:ro
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U postgres -d lab"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    networks: [lab]
+  pitr-recovery: &recovery
+    image: postgres:18.0-bookworm
+    restart: "no"
+    environment:
+      PGDATA: /data/pgdata
+    entrypoint: [bash, /etc/lab/pitr_recovery_entrypoint.sh]
+    command: [postgres, -c, hba_file=/etc/lab/replication_hba.conf, -c, archive_mode=off]
+    volumes:
+      - stage7_recovery:/data
+      - stage7_archive:/archive:ro
+      - stage7_backup:/backup:ro
+      - ./config/replication_hba.conf:/etc/lab/replication_hba.conf:ro
+      - ./scripts/pitr_recovery_entrypoint.sh:/etc/lab/pitr_recovery_entrypoint.sh:ro
+      - ./scripts/restore_wal.sh:/etc/lab/restore_wal.sh:ro
+    networks: [lab]
+  pitr-missing:
+    <<: *recovery
+    environment:
+      PGDATA: /data/pgdata
+      SIMULATE_MISSING_WAL: "true"
+    volumes:
+      - stage7_missing:/data
+      - stage7_archive:/archive:ro
+      - stage7_backup:/backup:ro
+      - ./config/replication_hba.conf:/etc/lab/replication_hba.conf:ro
+      - ./scripts/pitr_recovery_entrypoint.sh:/etc/lab/pitr_recovery_entrypoint.sh:ro
+      - ./scripts/restore_wal.sh:/etc/lab/restore_wal.sh:ro
+volumes:
+  stage7_source:
+  stage7_archive:
+  stage7_backup:
+  stage7_recovery:
+  stage7_missing:

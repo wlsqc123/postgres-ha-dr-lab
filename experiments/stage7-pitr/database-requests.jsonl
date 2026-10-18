@@ -1,0 +1,20 @@
+{"action": "state", "host": "standby"}
+{"action": "state", "host": "primary"}
+{"action": "snapshot", "host": "standby", "accounts": [399586296, 399586297]}
+{"action": "seed", "host": "pitr-source", "initial": [[1001, 10000], [1002, 10000]]}
+{"action": "transfer", "host": "pitr-source", "request": ["f0832e2e-51c9-4a4e-b363-bd18d4d5766b", 1001, 1002, 100]}
+{"action": "snapshot", "host": "pitr-source", "accounts": [1001, 1002]}
+{"action": "transfer", "host": "pitr-source", "request": ["5a72be90-1b37-4fc9-a726-cc356b405d73", 1001, 1002, 200]}
+{"action": "transfer", "host": "pitr-source", "request": ["b24f5be5-09ee-4fa4-93b5-14c2f189a254", 1001, 1002, 50]}
+{"action": "snapshot", "host": "pitr-source", "accounts": [1001, 1002]}
+{"action": "transfer", "host": "pitr-source", "request": ["d19ca346-043f-4ee8-bae9-0e132423ab4a", 1001, 1002, 777]}
+{"action": "snapshot", "host": "pitr-source", "accounts": [1001, 1002]}
+{"action": "snapshot", "host": "pitr-recovery", "accounts": [1001, 1002]}
+{"action": "state", "host": "pitr-recovery"}
+{"action": "checkpoint", "host": "pitr-recovery"}
+{"action": "state", "host": "pitr-recovery"}
+{"action": "transfer", "host": "pitr-recovery", "request": ["33d256ac-9c60-4acc-b093-2bd41a53cd40", 1001, 1002, 1]}
+{"action": "snapshot", "host": "pitr-recovery", "accounts": [1001, 1002]}
+{"action": "state", "host": "standby"}
+{"action": "state", "host": "primary"}
+{"action": "snapshot", "host": "standby", "accounts": [399586296, 399586297]}

@@ -1,0 +1,32 @@
+{
+  "accounts": [
+    {
+      "id": 1001,
+      "balance": 9900
+    },
+    {
+      "id": 1002,
+      "balance": 10100
+    }
+  ],
+  "request_history": [
+    {
+      "request_id": "f0832e2e-51c9-4a4e-b363-bd18d4d5766b",
+      "source": 1001,
+      "destination": 1002,
+      "amount": 100
+    }
+  ],
+  "ledger_entries": [
+    {
+      "request_id": "f0832e2e-51c9-4a4e-b363-bd18d4d5766b",
+      "account_id": 1001,
+      "delta": -100
+    },
+    {
+      "request_id": "f0832e2e-51c9-4a4e-b363-bd18d4d5766b",
+      "account_id": 1002,
+      "delta": 100
+    }
+  ]
+}

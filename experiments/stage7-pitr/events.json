@@ -1,0 +1,18 @@
+{
+  "backup_started": {
+    "time_ns": 1792331217401229200,
+    "elapsed_seconds": 19.359000000054948
+  },
+  "backup_verified": {
+    "time_ns": 1792331220210607500,
+    "elapsed_seconds": 22.17200000002049
+  },
+  "restore_started": {
+    "time_ns": 1792331242141486600,
+    "elapsed_seconds": 44.09299999999348
+  },
+  "target_verified": {
+    "time_ns": 1792331246967455800,
+    "elapsed_seconds": 48.92200000002049
+  }
+}

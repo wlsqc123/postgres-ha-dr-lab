@@ -1,0 +1,86 @@
+[
+  {
+    "container": "936bcf1fdb13f9d82391c28b3e5e7abb4875b0d0fb8eb4fc1cd2f634c4203836",
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 1,
+      "Error": "",
+      "StartedAt": "2026-10-18T13:47:38.323851036Z",
+      "FinishedAt": "2026-10-18T13:47:39.616461385Z"
+    }
+  },
+  {
+    "container": "fb806b593bdeb7ee84af906482a38d14576b2c53bf92acf90ba4f79cee68ab32",
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-18T13:47:23.728048109Z",
+      "FinishedAt": "2026-10-18T13:47:46.228214505Z"
+    }
+  },
+  {
+    "container": "40922cb3c5cfec18db986f7e7a2cd911985c279a31755efc65fc241ef1138373",
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-18T13:46:44.754267726Z",
+      "FinishedAt": "2026-10-18T13:47:19.717306877Z",
+      "Health": {
+        "Status": "unhealthy",
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "Start": "2026-10-18T13:47:09.953996894Z",
+            "End": "2026-10-18T13:47:10.033764637Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n"
+          },
+          {
+            "Start": "2026-10-18T13:47:12.04657697Z",
+            "End": "2026-10-18T13:47:12.137248971Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n"
+          },
+          {
+            "Start": "2026-10-18T13:47:14.168426561Z",
+            "End": "2026-10-18T13:47:14.267097796Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n"
+          },
+          {
+            "Start": "2026-10-18T13:47:16.279943716Z",
+            "End": "2026-10-18T13:47:16.357775712Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n"
+          },
+          {
+            "Start": "2026-10-18T13:47:18.369716268Z",
+            "End": "2026-10-18T13:47:18.470744648Z",
+            "ExitCode": 0,
+            "Output": "/var/run/postgresql:5432 - accepting connections\n"
+          }
+        ]
+      }
+    }
+  }
+]

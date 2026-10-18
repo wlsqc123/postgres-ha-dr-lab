@@ -4,7 +4,7 @@ PostgreSQL 장애 상황에서 데이터 유실 범위와 쓰기 복구 시간�
 
 **[포트폴리오 본문 — 장애를 어떻게 만들고 복구했는가](docs/portfolio.md)**에서 구현 이유, 실제 명령, 판정 기준과 실측 결과를 순서대로 설명합니다. 이 README는 단계별 환경 구성과 실행 방법을 다룹니다.
 
-Primary와 Standby의 복제부터 시작해 장애 전환, 재시도 정합성, 기존 Primary 재편입, WAL 기반 PITR을 단계별로 구현할 계획입니다. 단일 PC의 Docker 환경에서 실험하며 운영 환경의 고가용성이나 무손실을 보장하는 프로젝트는 아닙니다.
+Primary와 Standby의 복제부터 장애 전환, 재시도 정합성, 기존 Primary 재편입, 동기·비동기 비교와 WAL 기반 PITR을 단계별로 검증했습니다. 단일 PC의 Docker 환경에서 실험하며 운영 환경의 고가용성이나 무손실을 보장하는 프로젝트는 아닙니다.
 
 ## 현재 단계
 
@@ -199,8 +199,12 @@ python -m ledger.compare --confirm-comparison-faults
 
 비교용 컨테이너·볼륨이 없는 초기 상태에서 한 번 실행합니다. 끝나면 비교용 DB만 정지하고 볼륨은 보존합니다. [측정 조건](docs/stage6-replication-compare.md)과 [실측 결과](experiments/stage6-compare.json)를 확인할 수 있습니다.
 
-## 다음 단계
+## PITR 복구
 
-1. Base Backup과 WAL로 PITR을 수행하고 실측 결과를 정리합니다.
+별도 DB에서 Base Backup 이후 정상 거래를 추가하고 DB의 시각을 목표로 기록한 뒤 계좌·요청·원장을 삭제했습니다. 백업과 보관 WAL을 별도 볼륨에 복원해 목표 시점에서 정지시키고, 정상 요청 3건·원장 6건과 잔액을 검증했습니다. 목표 이후 거래와 삭제는 반영되지 않았고, 필수 WAL을 제공하지 않은 별도 복구는 명시적으로 실패했습니다.
 
-각 단계의 코드와 검증 결과를 확인한 뒤 다음 단계로 진행합니다.
+```powershell
+python -m ledger.pitr --confirm-isolated-delete
+```
+
+stage7 컨테이너·볼륨이 없는 초기 상태에서 한 번 실행합니다. 기존 재편입 환경은 유지하며 실험용 볼륨도 삭제하지 않습니다. [복구 설정과 판정 기준](docs/stage7-pitr.md), [실측 결과](experiments/stage7-pitr.json)를 확인할 수 있습니다.

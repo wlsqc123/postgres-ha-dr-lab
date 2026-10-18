@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "run_id": "20261018T134638Z-35ea6f2d",
+  "target": {
+    "target_time": "2026-10-18 13:47:06.026214+00:00",
+    "lsn": "0/4000B88",
+    "wal": "000000010000000000000004"
+  },
+  "method": "base-backup-and-archived-wal",
+  "backup_requests": 1,
+  "restored": {
+    "valid": true,
+    "requests": 3,
+    "ledger_entries": 6,
+    "balances": {
+      "1001": 9650,
+      "1002": 10350
+    }
+  },
+  "after_write_probe": {
+    "valid": true,
+    "requests": 4,
+    "ledger_entries": 8,
+    "balances": {
+      "1001": 9649,
+      "1002": 10351
+    }
+  },
+  "after_target_transaction_excluded": true,
+  "deletion_excluded": true,
+  "target_wal_not_in_backup": true,
+  "missing_required_wal_failed": true,
+  "timeline": 2,
+  "stage5_preserved": true,
+  "restore_to_target_verified_seconds": 4.829000000027008
+}

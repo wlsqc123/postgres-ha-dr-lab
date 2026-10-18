@@ -1,0 +1,64 @@
+{
+  "accounts": [
+    {
+      "id": 1001,
+      "balance": 9650
+    },
+    {
+      "id": 1002,
+      "balance": 10350
+    }
+  ],
+  "request_history": [
+    {
+      "request_id": "5a72be90-1b37-4fc9-a726-cc356b405d73",
+      "source": 1001,
+      "destination": 1002,
+      "amount": 200
+    },
+    {
+      "request_id": "b24f5be5-09ee-4fa4-93b5-14c2f189a254",
+      "source": 1001,
+      "destination": 1002,
+      "amount": 50
+    },
+    {
+      "request_id": "f0832e2e-51c9-4a4e-b363-bd18d4d5766b",
+      "source": 1001,
+      "destination": 1002,
+      "amount": 100
+    }
+  ],
+  "ledger_entries": [
+    {
+      "request_id": "5a72be90-1b37-4fc9-a726-cc356b405d73",
+      "account_id": 1001,
+      "delta": -200
+    },
+    {
+      "request_id": "5a72be90-1b37-4fc9-a726-cc356b405d73",
+      "account_id": 1002,
+      "delta": 200
+    },
+    {
+      "request_id": "b24f5be5-09ee-4fa4-93b5-14c2f189a254",
+      "account_id": 1001,
+      "delta": -50
+    },
+    {
+      "request_id": "b24f5be5-09ee-4fa4-93b5-14c2f189a254",
+      "account_id": 1002,
+      "delta": 50
+    },
+    {
+      "request_id": "f0832e2e-51c9-4a4e-b363-bd18d4d5766b",
+      "account_id": 1001,
+      "delta": -100
+    },
+    {
+      "request_id": "f0832e2e-51c9-4a4e-b363-bd18d4d5766b",
+      "account_id": 1002,
+      "delta": 100
+    }
+  ]
+}

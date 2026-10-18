@@ -1,0 +1,9 @@
+{
+  "archived_count": 5,
+  "last_archived_wal": "000000010000000000000004",
+  "last_archived_time": "2026-10-18 13:47:12.746481+00:00",
+  "failed_count": 0,
+  "last_failed_wal": null,
+  "last_failed_time": null,
+  "stats_reset": "2026-10-18 13:46:45.027154+00:00"
+}

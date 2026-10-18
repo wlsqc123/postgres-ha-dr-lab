@@ -1,0 +1,5 @@
+{
+  "archive_mode": "on",
+  "archive_command": "bash /etc/lab/archive_wal.sh %p %f",
+  "data_checksums": "on"
+}

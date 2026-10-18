@@ -4,7 +4,7 @@ Primary를 강제 종료하고 **거래 유실·중복 여부와 쓰기 복구 �
 
 `PostgreSQL 18` · `Docker` · `Python` · `동기·비동기 물리 복제`
 
-## 결과
+## 첫 장애 전환 결과
 
 | 승인 거래 유실 | 앱 쓰기 복구 관측 | 재편입 후 데이터 |
 |:---:|:---:|:---:|
@@ -73,4 +73,16 @@ SELECT pg_is_in_recovery();   -- false로 바뀔 때까지 확인
 | 장애 전환 | [제어 스크립트](../ledger/failover.py) | [결과](../experiments/stage4-failover.json) · [재시도 전 유실 판정](../experiments/stage4-failover/pre-retry-survival.json) |
 | 재편입 | [제어 스크립트](../ledger/rejoin.py) | [결과](../experiments/stage5-rejoin.json) |
 
-자동 장애 전환·네트워크 분할·PITR은 아직 검증하지 않았다. 상세 절차는 [장애 전환](stage4-failover.md)과 [재편입](stage5-rejoin.md)에 분리했다.
+## 삭제 직전 시점 복구 — PITR
+
+**Base Backup → 정상 거래 추가 → 목표 시각 기록 → 삭제 → WAL 재생**
+
+| 검증 | 결과 |
+|---|---|
+| 백업 이후 정상 거래까지 복구 | 요청 3건·원장 6건 일치 |
+| 목표 이후 거래·삭제 제외 | 확인 |
+| 필수 WAL 미제공 | 목표 미도달 오류로 복구 실패 |
+
+`recovery_target_time`과 `recovery.signal`로 복구하고, 목표 시점에서 정지해 데이터를 검증했다. [설정과 실행 기록](stage7-pitr.md)
+
+자동 장애 전환·네트워크 분할은 아직 검증하지 않았다. 상세 절차는 [장애 전환](stage4-failover.md)과 [재편입](stage5-rejoin.md)에 분리했다.

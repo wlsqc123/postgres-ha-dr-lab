@@ -1,0 +1,3 @@
+{
+  "output": "backup successfully verified\nSTART WAL LOCATION: 0/3000028 (file 000000010000000000000003)\nCHECKPOINT LOCATION: 0/3000080\nBACKUP METHOD: streamed\nBACKUP FROM: primary\nSTART TIME: 2026-10-18 13:46:58 UTC\nLABEL: pg_basebackup base backup\nSTART TIMELINE: 1\n795e19da92f78137a8f93dbc664f7eaac9c8120d413aae287df015e12c041192  /backup/base/backup_manifest"
+}

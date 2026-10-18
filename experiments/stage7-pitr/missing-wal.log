@@ -1,0 +1,23 @@
+postgres-ha-dr-lab-pitr-missing-1  | 
+postgres-ha-dr-lab-pitr-missing-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-ha-dr-lab-pitr-missing-1  | 
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:38.700 UTC [1] LOG:  starting PostgreSQL 18.0 (Debian 18.0-1.pgdg12+3) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:38.700 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:38.700 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:38.711 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:38.728 UTC [40] LOG:  database system was interrupted; last known up at 2026-10-18 13:46:58 UTC
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.524 UTC [40] LOG:  starting backup recovery with redo LSN 0/3000028, checkpoint LSN 0/3000080, on timeline ID 1
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.555 UTC [40] LOG:  restored log file "000000010000000000000003" from archive
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.573 UTC [40] LOG:  starting point-in-time recovery to 2026-10-18 13:47:06.026214+00
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.584 UTC [40] LOG:  redo starts at 0/3000028
+postgres-ha-dr-lab-pitr-missing-1  | Required WAL deliberately withheld: 000000010000000000000004
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.597 UTC [40] LOG:  completed backup recovery with redo LSN 0/3000028 and end LSN 0/3000120
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.597 UTC [40] LOG:  consistent recovery state reached at 0/3000120
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.597 UTC [1] LOG:  database system is ready to accept read-only connections
+postgres-ha-dr-lab-pitr-missing-1  | Required WAL deliberately withheld: 000000010000000000000004
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.604 UTC [40] LOG:  redo done at 0/3000120 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.01 s
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.604 UTC [40] FATAL:  recovery ended before configured recovery target was reached
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.609 UTC [1] LOG:  startup process (PID 40) exited with exit code 1
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.609 UTC [1] LOG:  terminating any other active server processes
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.609 UTC [1] LOG:  shutting down due to startup process failure
+postgres-ha-dr-lab-pitr-missing-1  | 2026-10-18 13:47:39.612 UTC [1] LOG:  database system is shut down

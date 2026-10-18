@@ -1,0 +1,17 @@
+{
+  "expected_failure": true,
+  "omitted_wal": "000000010000000000000004",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 1,
+    "Error": "",
+    "StartedAt": "2026-10-18T13:47:38.323851036Z",
+    "FinishedAt": "2026-10-18T13:47:39.616461385Z"
+  }
+}
