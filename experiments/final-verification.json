@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "reviewed_on": "2026-10-19",
+  "evidence_commit": "680a2dd06c1fbc398299e3d57be48e8cb7f36528",
+  "scope": "Stored evidence recalculation, documentation checks and unit tests; no new fault experiments",
+  "checks": [
+    "stage2_streaming_and_readonly_evidence",
+    "stage3_independent_ledger_oracle",
+    "stage4_survival_final_ledger_fencing_and_monotonic_recovery_time",
+    "stage5_replica_ledger_restart_and_readonly_evidence",
+    "stage6_raw_percentiles_survival_final_ledgers_and_existing_data",
+    "stage7_timestamp_restore_exclusions_fencing_and_required_wal_failure"
+  ],
+  "tests": {
+    "passed": 37,
+    "command": [
+      "docker",
+      "compose",
+      "-f",
+      "compose.yaml",
+      "-f",
+      "compose.rejoin.yaml",
+      "exec",
+      "-T",
+      "runner",
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "checks/test_ledger.py",
+      "checks/test_failover.py",
+      "checks/test_rejoin.py",
+      "checks/test_compare.py",
+      "checks/test_pitr.py"
+    ],
+    "log": "final-tests.log"
+  },
+  "not_verified": [
+    "fresh-clone end-to-end rerun",
+    "production HA",
+    "network partition",
+    "pg_rewind",
+    "failback",
+    "host loss"
+  ],
+  "local_document_links_verified": 61
+}

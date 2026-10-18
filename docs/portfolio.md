@@ -72,6 +72,8 @@ SELECT pg_is_in_recovery();   -- false로 바뀔 때까지 확인
 |---|---|---|
 | 장애 전환 | [제어 스크립트](../ledger/failover.py) | [결과](../experiments/stage4-failover.json) · [재시도 전 유실 판정](../experiments/stage4-failover/pre-retry-survival.json) |
 | 재편입 | [제어 스크립트](../ledger/rejoin.py) | [결과](../experiments/stage5-rejoin.json) |
+| 동기·비동기 비교 | [제어 스크립트](../ledger/compare.py) | [결과](../experiments/stage6-compare.json) |
+| PITR | [제어 스크립트](../ledger/pitr.py) | [결과](../experiments/stage7-pitr.json) |
 
 ## 삭제 직전 시점 복구 — PITR
 
@@ -86,3 +88,5 @@ SELECT pg_is_in_recovery();   -- false로 바뀔 때까지 확인
 `recovery_target_time`과 `recovery.signal`로 복구하고, 목표 시점에서 정지해 데이터를 검증했다. [설정과 실행 기록](stage7-pitr.md)
 
 자동 장애 전환·네트워크 분할은 아직 검증하지 않았다. 상세 절차는 [장애 전환](stage4-failover.md)과 [재편입](stage5-rejoin.md)에 분리했다.
+
+[면접 설명 요약](interview.md) · [최종 점검 기록](../experiments/final-verification.json)
